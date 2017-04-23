@@ -1,0 +1,347 @@
+body, 
+.wombatBody,
+.sectionContainer {
+  background-color: #ffffff;
+}
+.wombatBody md-toolbar
+{
+  background-color: #607d8b !important;
+  position:fixed; 
+  z-index: 10;
+}
+
+.wombatBody md-toolbar .md-button
+{
+  color: white;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
+.sectionContainer
+{
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+md-toolbar .logo-container
+{
+  height:60%;
+}
+ md-toolbar .logo-container .site-logo{
+}
+
+ md-toolbar .logo-container .site-logo img{
+  height: 100%;
+  width: auto;
+}
+.wombatBody md-toolbar md-icon.toolbarMenu 
+{
+  color: white; 
+  background-color: red;
+}
+
+
+.mainBodySection
+{
+  background-image: url('../images/WhiteHipster.png');
+  background-size:cover;
+  margin-top: 56px;
+}
+.mainBodySection h1
+{
+  color: #00acc1;
+}
+.mainBodySection h1,
+.mainBodySection h2
+{
+}
+
+
+
+.signupBar
+{
+  background-color: #eceff1;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+  min-height: 64px;
+}
+.signupBar span.highlight
+{
+  color: #00acc1;
+  font-weight: bold;
+}
+.signupBar .md-button
+{
+  min-width: 200px;
+}
+.signupBar .signupSpacer
+{
+  width: 30%;
+}
+.signupBar .changingTextDefault
+{
+  font-weight: bold;
+}
+
+
+.about
+{
+
+}
+
+
+
+
+
+.testimonials
+{
+  width: 100%;
+}
+.testimonialTabContainer
+{
+  width: 100%;
+}
+.testimonials
+{
+  background-color: #B0BDC5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+img.brandImage
+{
+  display: block;
+  height: auto;
+  width: 20%;
+  max-width: 20%;
+}
+.testimonials p
+{
+  color: #607d8b;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+}
+
+.testimonials md-content
+{
+  height: 100px;
+  background-color: #B0BDC5;
+}
+
+
+.testimonials md-tabs
+{
+  min-height: 100px !important;
+}
+.testimonials md-tabs-wrapper,
+.testimonials md-tabs-canvas
+{
+  height: 0px;
+}
+
+.testimonials md-tabs-content-wrapper
+{
+  top: 0px;
+}
+
+.testimonials md-tabs md-content{
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.testimonialScroller
+{
+  width: 10px;
+  height: 10px;
+  background-color: #c9c9c9;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.testimonialScroller.selected
+{
+  background-color: #00acc1;
+}
+
+.pricingSignup
+{
+  background-color: white;
+}
+
+.pricing h3
+{
+  font-weight: bold;
+}
+
+.pricingSpacer
+{
+}
+
+
+.signupContainer
+{
+  background-color: white;
+  padding: 10px;
+  padding-top: 0px;
+}
+
+.signupContainer .formField
+{
+  margin-bottom: 10px;
+}
+
+.signupContainer input
+{
+  border-color: #c9c9c9;
+}
+
+.signupContainer .md-button
+{
+  margin-left: 0px;
+}
+
+
+.team
+{
+  background-color: #eceff1;
+}
+
+.teamMember
+{ 
+  box-sizing: border-box;
+}
+.teamMember p
+{
+  text-align: center;
+}
+.teamMemberName
+{
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+.teamMemberPosition
+{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.team .avatar
+{
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #00acc1;
+}
+
+.team .avatar:hover
+{ 
+  border-color: #80deea;
+}
+
+
+
+
+
+.footer
+{
+  background-color: #323232;
+}
+
+.footer h4,
+.footer p
+{
+  color: white;
+}
+
+.footer .links
+{
+  margin-bottom: 20px;
+}
+
+.socialIcons
+{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  min-width: 200px;
+}
+.socialIcons a
+{
+  margin-left: 10px;
+  color: #00acc1;
+}
+
+.socialIcons a img
+{
+  height: 25px;
+  width: auto;
+}
+
+.socialIcon:hover
+{
+  color: #80deea;
+}
+
+.socialIcons:hover img path
+{
+  fill: #00acc1;
+}
+.socialIcon
+{
+  font-size: 25px;
+  display: inline-block;
+}
+p.copyright
+{
+  text-align: center;
+  font-size: 12px;
+}
+
+@media screen and (max-width:600px)
+{
+  .signupBar
+  {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .signupBar p
+  {
+    text-align: center;
+  }
+  .mainBodySection {
+    height:60vh;
+  }
+}
+
+@media screen and (min-width:601px)
+{
+  .mainBodySection {
+    height:85vh;
+    min-height: 400px;
+  }
+  .signupBar p
+  {
+    margin-right: 30px;
+    min-width: 350px;
+  }
+}

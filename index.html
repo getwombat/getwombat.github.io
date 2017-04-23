@@ -1,0 +1,319 @@
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <link href="MaterialIcons/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/body.css">
+
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1782532585301303'); // Insert your pixel ID here.
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1782532585301303&ev=PageView&noscript=1"
+  /></noscript>
+</head>
+<body ng-app="wombatLandingPage" ng-cloak 
+ng-init="initLandingPage()" 
+ng-controller="LandingPageCtrl as ctrl"
+class="wombatBody">
+<div id="preloader" layout="column" layout-align="center center" ng-show="!preloaderHidden">
+  <div class="wbt-head">
+    <div class="logo">
+      <img  src="images/WombatHead.png">
+    </div>
+  </div>
+</div>
+
+<div>
+  <md-toolbar hide-gt-xs>
+    <div class="md-toolbar-tools" layout="row">
+      <div class="logo-container">
+        <a class="site-logo">
+          <img src="images/WombatLogo2-Light.png">
+        </a>
+      </div>
+      <div flex></div>
+      <md-menu md-position-mode="target bottom">
+        <md-button aria-label="View menu" class="md-icon-button" ng-click="ctrl.openMenu($mdOpenMenu, $event)">
+          <md-icon class="toolbarMenu" md-menu-origin="" md-svg-icon="menu"></md-icon>
+          Menu
+        </md-button>
+        <md-menu-content width="4">
+          <md-menu-item>
+            <md-button aria-label="Home" href="#" ng-click="ctrl.menuClicked()" target="_self">
+              Home
+            </md-button>
+          </md-menu-item>
+          <md-menu-item>
+            <md-button aria-label="About" href="#about"ng-click="ctrl.menuClicked()" target="_self">
+              About
+            </md-button>
+          </md-menu-item>
+          <md-menu-item>
+            <md-button aria-label="Our Team" href="#team" ng-click="ctrl.menuClicked()" target="_self">
+              Our Team
+            </md-button>
+          </md-menu-item>
+          <md-menu-item>
+            <md-button aria-label="Sign up" href="#signup" ng-click="ctrl.menuClicked()" target="_self">
+              Sign up
+            </md-button>
+          </md-menu-item>
+        </md-menu-content>
+      </md-menu>
+    </div>
+  </md-toolbar>
+  <md-toolbar hide show-gt-xs>
+    <div class="md-toolbar-tools">
+      <div class="logo-container">
+        <a class="site-logo">
+          <img src="images/WombatLogo2-Light.png">
+        </a>
+      </div>
+      <div flex="100"></div>
+
+      <md-button aria-label="Home" href="#" target="_self">
+        Home
+      </md-button>
+      <md-button aria-label="About" href="#about" target="_self">
+        About
+      </md-button>
+      <md-button aria-label="Our Team" href="#team" target="_self">
+        Our Team
+      </md-button>
+      <md-button aria-label="Login" href="https://dash.getwombat.com/login">
+        Login
+      </md-button>
+      <md-button aria-label="Sign up" href="#signup" target="_self">
+        Sign up
+      </md-button>
+
+    </div>
+  </md-toolbar>
+
+  <md-content>
+    <div class="mainBodySection sectionContainer" layout="row" layout-align="start center">
+      <div layout="column" layout-align="center start" 
+      flex="90" flex-gt-xs="50">
+        <h1>Changing the way apps & users interact</h1>
+        <h2>A next-generation in-app empathy-marketing platform</h2>
+      </div>
+    </div>
+    <div class="signupBar" layout="column" layout-gt-xs="row" layout-align="space-between center">
+        <p><span class="highlight">We</span> take care of creating delightful interactions<br>with your users, so <span class="highlight">you</span> have time to<br><span class="changingTextDefault" ng-style="{'color':selectedTimeItem.color }">{{selectedTimeItem.text}}</span></p>
+        <md-button class="md-raised md-primary">Get started free</md-button>
+      </div>
+    </div>
+    <div name="about" class="sectionContainer" layout="column" layout-align="center center">
+      <a class="anchor" id="about"></a>
+      <h2>Focus on what matters most</h2>
+      <p>Wombat takes care of all your empathy-marketing needs, from step-by-step message creation to auto-optimized message delivery.</p>
+      <div class="columns" layout="column" layout-gt-xs="row" layout-align-gt-xs="space-between start">
+        <div flex-gt-xs="40">
+          <h3>Cubes: Your personal collection of in-app messages</h3>
+          <p>Wombat comes with a rich bank of customizable messages (called Cubes) to choose from.</p>
+        </div>
+        <div flex-gt-xs="40">
+        </div>
+      </div>
+      <div class="columns" layout="column" layout-gt-xs="row" layout-align-gt-xs="space-between start">
+        <div flex-gt-xs="40">
+        </div>
+        <div flex-gt-xs="40">
+          <h3>Simplified Cube creation</h3>
+          <p>Create your messages in minutes and continue upkeep only when you want to.</p>
+        </div>
+      </div>
+      <div class="columns" layout="column" layout-gt-xs="row" layout-align-gt-xs="space-between start">
+        <div flex-gt-xs="40">
+          <h3>Auto-optimized Cube delivery</h3>
+          <p>Our algorithms learn your users' behavior to understand which Cube is right for each person to see, and when.</p>
+        </div>
+        <div flex-gt-xs="40">
+        </div>
+      </div>
+      <div class="columns" layout="column" layout-gt-xs="row" layout-align-gt-xs="space-between start">
+        <div flex-gt-xs="40">
+        </div>
+        <div flex-gt-xs="40">
+          <h3>Simple to use, Powerful results</h3>
+          <p>Our platform is smart enough to optimize your relationships for you even if you set it and forget it.</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials" layout="column" layout-align="center center">
+      <div class="testimonialTabContainer">
+        <md-tabs md-autoselect="" md-selected="testimonialIndex" >
+          <md-tab ng-repeat="tab in testimonials" label="{{tab.title}}">
+            <md-content layout-align="center center" layout="column">
+              <div layout="row">
+                <!--<img class="brandImage" ng-src="images/{{tab.image}}"></img>-->
+                <p class="noMargins" ng-bind-html="tab.text"></p>
+              </div>
+            </md-content>
+          </md-tab>
+        </md-tabs>
+      </div>
+      <div layout="row" layout-align="center center">
+        <div class="testimonialScroller" ng-class="tab.index == testimonialIndex ? 'selected ' : ' '" ng-repeat="tab in testimonials" ng-click="selectTestimonial(tab)">
+        </div>
+      </div>
+    </div>
+    <div class="sectionContainer pricingSignup" layout="column" layout-gt-xs="row">
+      <div class="pricing" flex-gt-xs="45">
+        <a class="anchor" id="pricing"></a>
+        <h2>Pricing</h2>
+        <h3>SIGN UP<br/>
+        <span class="wbBlue">FREE</span></h3>
+        <p>6 month free trial<br>No strings attached
+        </p>
+        <p>After that, pricing will be based on month active users and will remain free forever if under 100MAU.)</p>
+      </div>
+      <div class="pricingSpacer" hide show-gt-xs flex-gt-xs="10">
+      </div>
+      <div class="signupContainer anchor" flex-gt-xs="45">
+        <a class="anchor" id="signup"></a>
+        <h2>Become a Wombat Early Adopter</h2>
+        <form class="wmb-form" id="signupForm" name="signupForm">
+          <div class="formField" layout="column">
+            <label for="app_name">Your app's name</label>
+            <input type="text" name="app_name" placeholder="(2-20 characters)" id="app_name" tabindex="1" ng-model="user.appName" required minlength="2" maxlength="20" />
+          </div>
+          <div class="formField" layout="column">
+            <label for="email_add">Your email address</label>
+            <input type="email" name="email_add" placeholder="(Your work email)" id="email_add" tabindex="2" ng-model="user.email" required />
+          </div>
+          <div class="formField" layout="column">
+            <label for="promo_code">Promo code</label>
+            <input type="text" name="promo_code" placeholder="(If you've got one)" id="promo_code" tabindex="3" ng-model="user.promoCode" />
+          </div>
+          <div class="field-box">
+            <div class="error-message" id="error-signup" >
+              <span ng-bind="signupFormError" ng-show="signupFormError"/>
+            </div>
+          </div>
+          <div class="send-box">
+          <md-button class="md-primary md-raised" tabindex="4" ng-click="requestAccess(signupForm)">Request access</md-button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+    <div class="team sectionContainer">
+      <a class="anchor" id="team"></a>
+      <div layout="row" layout-wrap layout-align="space-between start">
+        <div layout="column" class="teamMember" flex="40" flex-gt-xs="20" layout=align="center center">
+          <a href="https://www.linkedin.com/in/adi-nouriel-48704284" title="Adi Nouriel - CEO and Co-Founder">
+            <img class="avatar" src="images/adi.png" />
+          </a>
+          <span class="teamMemberName">Adi Nouriel</span>
+          <span class="teamMemberPosition">CEO and Co-Founder</span>
+        </div>
+        <div layout="column" class="teamMember"  flex="40" flex-gt-xs="20" layout=align="center center">
+          <a href="https://www.linkedin.com/in/lironkopinsky" 
+          title="Liron Kopinsky - CTO and Co-Founder">
+            <img class="avatar" src="images/liron.png" />
+          </a>
+          <span class="teamMemberName">Liron Kopinsky</span>
+          <span class="teamMemberPosition">CTO and Co-Founder</span>
+        </div>
+
+        <div layout="column" class="teamMember" flex="40" flex-gt-xs="20" layout=align="center center">
+          <a href="https://www.linkedin.com/in/ahuval/"
+          title="Ahuva Levkovitz - UX & Product">
+            <img class="avatar" src="images/ahuva.png" />
+          </a>
+          <span class="teamMemberName">Ahuva Levkovitz</span>
+          <span class="teamMemberPosition">UX & Product</span>
+        </div>
+        <div layout="column" class="teamMember" flex="40" flex-gt-xs="20" layout=align="center center">
+          <a href="mailto:support@getwombat.com" title="Winston - Chief Wombat Officer"/>
+            <img class="avatar" src="images/wombat.png" />
+          </a>
+          <span class="teamMemberName">Winson</span>
+          <span class="teamMemberPosition">CWO</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer sectionContainer" layout="column">
+      <div class="links" layout="row" layout-wrap layout-align="space-between start">
+        <div layout="column">
+          <h4>Wombat</h4>
+          <a href="#about" target="_self">About</a>
+          <a href="#team" target="_self">Team</a>
+          <a href="https://itunes.apple.com/us/app/cubes-app-preview-your-wombat-cubes/id1183723221?mt=8">Cubes App</a>
+        </div>
+        <div layout="column">
+          <h4>Support</h4>
+          <a href="http://info.getwombat.com">Help docs</a>
+          <a href="mailto:support@getwombat.com">Contact us</a>
+        </div>
+        <div layout="column">
+          <h4>Be Helpful</h4>
+          <a href="http://blog.getwombat.com">Startup Giving</a>
+          <a href="http://blog.getwombat.com">Wombat Wisdom</a>
+        </div>
+      </div>
+      <div class="socialIcons" layout="row" layout-align="space-between center">
+        <a href="https://www.twitter.com/getwombat">
+          <div class="ion-social-twitter-outline socialIcon"></div>
+        </a>
+        <a href="https://www.facebook.com/getwombat">
+          <div class="ion-social-facebook-outline socialIcon"></div>
+        </a>
+        <a href="https://www.linkedin.com/company/wombat---wom-solutions">
+          <div class="ion-social-linkedin-outline socialIcon"></div>
+        </a>
+        <a href="mailto:support@getwombat.com">
+          <div class="ion-ios-email-outline socialIcon"></div>
+        </a>
+        <!--
+        <a class="cubesAppLink" href="https://itunes.apple.com/us/app/cubes-app-preview-your-wombat/id1183723221?mt=8">
+          <md-icon md-svg-src="images/WombatFaceCubesApp.svg" style="color:black;"></md-icon>
+        </a>-->
+      </div>
+      <div layout="column" layout=align="center center">
+        <p class="copyright">Copyright Wombat 2017</p>
+      </div>
+    </div>
+  </md-content>
+</div>
+
+<!-- Angular Material requires Angular.js Libraries -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-resource.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-sanitize.min.js"></script>
+
+<!-- Angular Material Library -->
+<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+
+<script type="text/javascript" src="js/wombat.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71431554-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

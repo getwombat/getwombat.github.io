@@ -1,0 +1,112 @@
+/*
+wbYellow #fbb811
+wbYellow2 #f6ca52
+
+wbDarkGray: #323232
+wbMedGray: #c9c9c9
+wbLightGray: #eceff1
+wbUltraLightGray: #f5f7f8
+
+wbBlue1: #00acc1 0,172,193 0,0.674,0.756
+wbBlue2: #80deea
+wbBlue3: #b2ebf2
+
+wbPink1: #f74272
+wbPink2: #f97195
+wbPink3: #F8A0B8
+
+wbBlueGray1: #607d8b
+wbBlueGray2: #B0BDC5
+
+wbGreen1: #65a223
+wbGreen2: #a0c97f
+
+#ButtonBorder #95a482*/
+
+span, p, a,
+h1, h2, h3,
+h4, h5, h6,
+body, html,
+input, textarea,
+md-tooltip, timer, 
+select
+{
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2
+{
+  font-weight: normal;
+}
+.wbYellow
+{
+  color: #fbb811;
+}
+.wbBlue
+{
+  color: #00acc1;
+}
+
+.noMargins
+{
+  margin: 0px;
+}
+
+a
+{
+  color: #00acc1;
+}
+
+a:hover
+{
+  color: #80deea;
+}
+
+.signature
+{
+  font-family: 'Dancing Script', cursive;
+}
+
+.handwriting
+{
+  font-family: 'Loved by the King', cursive;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color:#FFF;
+}
+
+#preloader.ng-hide-remove { 
+  animation:2s lightSpeedOut ease; }
+
+/* light speed out */
+@keyframes lightSpeedOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+}
+
+@keyframes lightSpeedOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+}
