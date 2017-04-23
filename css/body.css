@@ -110,11 +110,6 @@ md-toolbar .logo-container
   width: 100%;
   min-height: 64px;
 }
-.signupBar span.highlight
-{
-  color: #00acc1;
-  font-weight: bold;
-}
 .signupBar .md-button
 {
   min-width: 200px;
@@ -122,10 +117,6 @@ md-toolbar .logo-container
 .signupBar .signupSpacer
 {
   width: 30%;
-}
-.signupBar .changingTextDefault
-{
-  font-weight: bold;
 }
 
 
@@ -368,6 +359,20 @@ p.copyright
 {
   text-align: center;
   font-size: 12px;
+}
+
+.footer .timeto
+{
+  text-align: center;
+}
+.footer span.highlight
+{
+  color: #fbb811;
+  font-weight: bold;
+}
+.changingTextDefault
+{
+  font-weight: bold;
 }
 
 @media screen and (max-width:600px)
