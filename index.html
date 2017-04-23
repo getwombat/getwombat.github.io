@@ -2,9 +2,9 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Angular Material style sheet -->
-  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
   <link href="MaterialIcons/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/body.css">
@@ -45,8 +45,7 @@ class="wombatBody">
       <div flex></div>
       <md-menu md-position-mode="target bottom">
         <md-button aria-label="View menu" class="md-icon-button" ng-click="ctrl.openMenu($mdOpenMenu, $event)">
-          <md-icon class="toolbarMenu" md-menu-origin="" md-svg-icon="menu"></md-icon>
-          Menu
+          <md-icon class="toolbarMenu" md-menu-origin="" md-font-icon="mdi mdi-menu"></md-icon>
         </md-button>
         <md-menu-content width="4">
           <md-menu-item>
@@ -102,32 +101,50 @@ class="wombatBody">
   </md-toolbar>
 
   <md-content>
-    <div class="mainBodySection sectionContainer" layout="row" layout-align="start center">
-      <div layout="column" layout-align="center start" 
-      flex="90" flex-gt-xs="50">
-        <h1>Changing the way apps & users interact</h1>
-        <h2>A next-generation in-app empathy-marketing platform</h2>
+    <div class="mainBodySection" layout="column" layout-align="center center">
+      <div class="sectionContainer" flex layout-fill layout="row" layout-align="start center">
+        <div layout="column" layout-align="center start" 
+        flex="90" flex-lg="60" flex-gt-xs="60">
+          <h1>Changing the way apps & users interact</h1>
+          <h2>A next-generation in-app empathy marketing platform</h2>
+
+          <md-button class="md-raised md-primary" href="#signup" target="_self">Get started free</md-button>
+        </div>
       </div>
-    </div>
-    <div class="signupBar" layout="column" layout-gt-xs="row" layout-align="space-between center">
-        <p><span class="highlight">We</span> take care of creating delightful interactions<br>with your users, so <span class="highlight">you</span> have time to<br><span class="changingTextDefault" ng-style="{'color':selectedTimeItem.color }">{{selectedTimeItem.text}}</span></p>
-        <md-button class="md-raised md-primary">Get started free</md-button>
+      <div class="learnMore" layout="column" layout-align="center center">
+          <a href="#about" target="_self" layout="column" layout-align="center center">
+            <span>Learn more</span>
+            <md-icon md-font-icon="mdi mdi-arrow-down"></md-icon>
+          </a>
       </div>
+
+      <!--
+      <div class="signupBar" layout="column" layout-gt-xs="row" layout-align="space-between center">
+          <p><span class="highlight">We</span> take care of creating delightful interactions<br>with your users, so <span class="highlight">you</span> have time to<br><span class="changingTextDefault" ng-style="{'color':selectedTimeItem.color }">{{selectedTimeItem.text}}</span></p>
+        </div>
+      </div>-->
     </div>
-    <div name="about" class="sectionContainer" layout="column" layout-align="center center">
+    <div name="about" class="sectionContainer about" layout="column" layout-align="center start">
       <a class="anchor" id="about"></a>
       <h2>Focus on what matters most</h2>
-      <p>Wombat takes care of all your empathy-marketing needs, from step-by-step message creation to auto-optimized message delivery.</p>
+      <p>Wombat takes care of all your empathy marketing needs.<br>From step-by-step message creation to auto-optimized message delivery,<br>we've got you covered. <strong>No marketing skills necessary.</strong></p>
+    </div>
+    <div class="sectionContainer">
       <div class="columns" layout="column" layout-gt-xs="row" layout-align-gt-xs="space-between start">
+        <div flex hide-gt-xs layout="column" layout-align="center center">
+          <img src="images/cubes.jpeg"/>
+        </div>
         <div flex-gt-xs="40">
           <h3>Cubes: Your personal collection of in-app messages</h3>
           <p>Wombat comes with a rich bank of customizable messages (called Cubes) to choose from.</p>
         </div>
-        <div flex-gt-xs="40">
+        <div flex-gt-xs="40" hide show-gt-xs layout="column" layout-align="center center">
+          <img src="images/cubes.jpeg"/>
         </div>
       </div>
       <div class="columns" layout="column" layout-gt-xs="row" layout-align-gt-xs="space-between start">
-        <div flex-gt-xs="40">
+        <div flex-gt-xs="40" layout="column" layout-align="center center">
+          <img src="images/heman_run.gif"/>
         </div>
         <div flex-gt-xs="40">
           <h3>Simplified Cube creation</h3>
@@ -135,15 +152,20 @@ class="wombatBody">
         </div>
       </div>
       <div class="columns" layout="column" layout-gt-xs="row" layout-align-gt-xs="space-between start">
+        <div flex hide-gt-xs layout="column" layout-align="center center">
+          <img src="images/learning.jpeg"/>
+        </div>
         <div flex-gt-xs="40">
           <h3>Auto-optimized Cube delivery</h3>
           <p>Our algorithms learn your users' behavior to understand which Cube is right for each person to see, and when.</p>
         </div>
-        <div flex-gt-xs="40">
+        <div flex-gt-xs="40" hide show-gt-xs>
+          <img src="images/learning.jpeg"/>
         </div>
       </div>
       <div class="columns" layout="column" layout-gt-xs="row" layout-align-gt-xs="space-between start">
-        <div flex-gt-xs="40">
+        <div flex-gt-xs="40" layout="column" layout-align="center center">
+          <img src="images/relationship.jpeg"/>
         </div>
         <div flex-gt-xs="40">
           <h3>Simple to use, Powerful results</h3>
@@ -211,15 +233,16 @@ class="wombatBody">
     </div>
     <div class="team sectionContainer">
       <a class="anchor" id="team"></a>
+      <h2>Meet our team</h2>
       <div layout="row" layout-wrap layout-align="space-between start">
-        <div layout="column" class="teamMember" flex="40" flex-gt-xs="20" layout=align="center center">
+        <div layout="column" class="teamMember" flex="40" flex-gt-xs="20" layout-align="start center">
           <a href="https://www.linkedin.com/in/adi-nouriel-48704284" title="Adi Nouriel - CEO and Co-Founder">
             <img class="avatar" src="images/adi.png" />
           </a>
           <span class="teamMemberName">Adi Nouriel</span>
           <span class="teamMemberPosition">CEO and Co-Founder</span>
         </div>
-        <div layout="column" class="teamMember"  flex="40" flex-gt-xs="20" layout=align="center center">
+        <div layout="column" class="teamMember"  flex="40" flex-gt-xs="20" layout-align="center center">
           <a href="https://www.linkedin.com/in/lironkopinsky" 
           title="Liron Kopinsky - CTO and Co-Founder">
             <img class="avatar" src="images/liron.png" />
@@ -228,7 +251,7 @@ class="wombatBody">
           <span class="teamMemberPosition">CTO and Co-Founder</span>
         </div>
 
-        <div layout="column" class="teamMember" flex="40" flex-gt-xs="20" layout=align="center center">
+        <div layout="column" class="teamMember" flex="40" flex-gt-xs="20" layout-align="center center">
           <a href="https://www.linkedin.com/in/ahuval/"
           title="Ahuva Levkovitz - UX & Product">
             <img class="avatar" src="images/ahuva.png" />
@@ -236,7 +259,7 @@ class="wombatBody">
           <span class="teamMemberName">Ahuva Levkovitz</span>
           <span class="teamMemberPosition">UX & Product</span>
         </div>
-        <div layout="column" class="teamMember" flex="40" flex-gt-xs="20" layout=align="center center">
+        <div layout="column" class="teamMember" flex="40" flex-gt-xs="20" layout-align="center center">
           <a href="mailto:support@getwombat.com" title="Winston - Chief Wombat Officer"/>
             <img class="avatar" src="images/wombat.png" />
           </a>
@@ -247,7 +270,7 @@ class="wombatBody">
     </div>
     <div class="footer sectionContainer" layout="column">
       <div class="links" layout="row" layout-wrap layout-align="space-between start">
-        <div layout="column">
+        <div layout="column" layout-align="center">
           <h4>Wombat</h4>
           <a href="#about" target="_self">About</a>
           <a href="#team" target="_self">Team</a>
@@ -257,10 +280,11 @@ class="wombatBody">
           <h4>Support</h4>
           <a href="http://info.getwombat.com">Help docs</a>
           <a href="mailto:support@getwombat.com">Contact us</a>
+          <a href="/privacy.html">Privacy</a>
         </div>
         <div layout="column">
           <h4>Be Helpful</h4>
-          <a href="http://blog.getwombat.com">Startup Giving</a>
+          <a href="http://blog.getwombat.com/startup-giving">Startup Giving</a>
           <a href="http://blog.getwombat.com">Wombat Wisdom</a>
         </div>
       </div>
@@ -291,16 +315,16 @@ class="wombatBody">
 
 <!-- Angular Material requires Angular.js Libraries -->
 
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-resource.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-sanitize.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-resource.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-sanitize.min.js"></script>
 
 <!-- Angular Material Library -->
-<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
 
 
 <script type="text/javascript" src="js/wombat.js"></script>

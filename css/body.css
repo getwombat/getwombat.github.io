@@ -42,18 +42,24 @@ md-toolbar .logo-container
   height: 100%;
   width: auto;
 }
+.wombatBody md-toolbar md-menu .md-button
+{
+  border-radius: 0px;
+}
 .wombatBody md-toolbar md-icon.toolbarMenu 
 {
   color: white; 
-  background-color: red;
+  font-size: 36px;
+  height: 36px;
+  width: 36px;
 }
 
 
 .mainBodySection
 {
+  margin-top: 64px;
   background-image: url('../images/WhiteHipster.png');
   background-size:cover;
-  margin-top: 56px;
 }
 .mainBodySection h1
 {
@@ -63,7 +69,37 @@ md-toolbar .logo-container
 .mainBodySection h2
 {
 }
+.mainBodySection .md-button
+{
+  margin-top: 50px;
+  margin-left: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-weight: bold;
+}
 
+.mainBodySection .sectionContainer
+{
+  background: transparent;
+}
+.learnMore a
+{
+  text-decoration: none;
+}
+.learnMore a span
+{
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.learnMore md-icon
+{
+  font-size: 48px;
+  width: 48px;
+  height: 48px;
+}
 
 
 .signupBar
@@ -95,10 +131,23 @@ md-toolbar .logo-container
 
 .about
 {
-
+  background-color: #b2ebf2;/* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left , #ffffff, #00acc1); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right , #ffffff, #00acc1); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right , #ffffff, #00acc1); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right , #ffffff, #00acc1); /* Standard syntax */
+}
+}
+.about p
+{
 }
 
 
+.columns img
+{
+  width: 80%;
+  height: auto;
+}
 
 
 
@@ -192,7 +241,6 @@ img.brandImage
 .signupContainer
 {
   background-color: white;
-  padding: 10px;
   padding-top: 0px;
 }
 
@@ -208,7 +256,13 @@ img.brandImage
 
 .signupContainer .md-button
 {
+  margin-top: 20px;
   margin-left: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-weight: bold;
 }
 
 
@@ -242,6 +296,7 @@ img.brandImage
   box-sizing: border-box;
   display: block;
   width: 100%;
+  max-width: 150px;
   height: auto;
   border-radius: 50%;
   border-width: 3px;
@@ -329,14 +384,19 @@ p.copyright
     text-align: center;
   }
   .mainBodySection {
-    height:60vh;
+    height:90vh;
+    margin-top: 56px;
+  }
+  .mainBodySection
+  {
+    background-position: 40%;
   }
 }
 
 @media screen and (min-width:601px)
 {
   .mainBodySection {
-    height:85vh;
+    height:90vh;
     min-height: 400px;
   }
   .signupBar p

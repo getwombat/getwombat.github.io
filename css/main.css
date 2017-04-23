@@ -52,12 +52,14 @@ h1, h2
   margin: 0px;
 }
 
-a
+a,
+a md-icon
 {
   color: #00acc1;
 }
 
-a:hover
+a:hover,
+a:hover md-icon
 {
   color: #80deea;
 }
