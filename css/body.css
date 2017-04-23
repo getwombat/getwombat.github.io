@@ -122,15 +122,18 @@ md-toolbar .logo-container
 
 .about
 {
-  background-color: #b2ebf2;/* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left , #ffffff, #00acc1); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right , #ffffff, #00acc1); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right , #ffffff, #00acc1); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right , #ffffff, #00acc1); /* Standard syntax */
+  background-color: #00acc1;/* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left , #f74272, #00acc1); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right , #f74272, #00acc1); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right , #f74272, #00acc1); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right , #f74272, #00acc1); /* Standard syntax */
+  
+  color: white;
 }
 }
-.about p
+.about h2, .about p
 {
+  color: white;
 }
 
 
