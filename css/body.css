@@ -326,6 +326,10 @@ img.brandImage
 {
   width: 100%;
 }
+.formField.last
+{
+  margin-bottom: 0px;
+}
 .formField label
 {
   font-weight: bold;
@@ -355,6 +359,14 @@ img.brandImage
 
 .formField input:focus::-webkit-input-placeholder {
   color: #fbb811;
+}
+.errorContainer
+{
+  height: 20px;
+}
+.errorContainer span
+{
+  color: #f74272;
 }
 
 
@@ -424,6 +436,10 @@ img.brandImage
 .footer .links
 {
   margin-bottom: 20px;
+}
+.footer .links a
+{
+  text-align: center;
 }
 
 .socialIcons

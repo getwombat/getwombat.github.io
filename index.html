@@ -227,11 +227,11 @@ class="wombatBody">
               <label for="email_add">What's your email address?</label>
               <input type="email" name="email_add" placeholder="(Your work email)" id="email_add" tabindex="2" ng-model="user.email" required />
             </div>
-            <div class="formField" layout="column" layout-align="center center">
+            <div class="formField last" layout="column" layout-align="center center">
               <label for="promo_code">Got a promo code?</label>
               <input type="text" name="promo_code" placeholder="(If you've got one)" id="promo_code" tabindex="3" ng-model="user.promoCode" />
             </div>
-            <div class="field-box">
+            <div class="errorContainer">
               <div class="error-message" id="error-signup" >
                 <span ng-bind="signupFormError" ng-show="signupFormError"/>
               </div>

@@ -133,34 +133,34 @@ wombatLandingPage.controller('LandingPageCtrl',
 
     var requestAccess = function(signupForm)
     {
-      $scope.signupError = null;
+      $scope.signupFormError = null;
       if(!$scope.user.appName || $scope.user.appName.length == 0)
       {
-        $scope.signupError = "App name is required.";
+        $scope.signupFormError = "App name is required.";
         return;
       }
 
       if($scope.user.appName.length < 2 || $scope.user.appName.length > 20)
       {
-        $scope.signupError = "Invalid app name.";
+        $scope.signupFormError = "Invalid app name.";
         return;
       }
 
       if(signupForm.$error.appName)
       {
-        $scope.signupError = "Invalid app name.";
+        $scope.signupFormError = "Invalid app name.";
         return;
       }
 
       if(signupForm.$error.email)
       {
-        $scope.signupError = "Invalid email address.";
+        $scope.signupFormError = "Invalid email address.";
         return;
       }
 
       if(!$scope.user.email || $scope.user.email.length == 0)
       {
-        $scope.signupError = "Email is required.";
+        $scope.signupFormError = "Email is required.";
         return;
       }
 
