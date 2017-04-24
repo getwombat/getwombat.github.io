@@ -19,6 +19,10 @@ body,
   margin-top: 0px;
   text-align: center;
 }
+label,p
+{
+  text-align: center;
+}
 
 .wombatBody md-toolbar .md-button
 {
@@ -163,7 +167,7 @@ md-toolbar .logo-container
 }
 .columnsContainer.one,
 .columnsContainer.three,
-.pricingSignup
+.signupContainer
 {
   border-top: 1px solid #607d8b;
   border-bottom: 1px solid #607d8b;
@@ -278,7 +282,7 @@ img.brandImage
   background-color: #00acc1;
 }
 
-.pricingSignup
+.signupContainer
 {
   background-color: #f5f7f8;
 }
@@ -293,16 +297,9 @@ img.brandImage
   margin: 0;
   margin-top: 10px;
 }
-
-.pricingSpacer
+.pricing p.mau
 {
-}
-
-
-.signupContainer
-{
-  background-color: transparent;
-  padding-top: 0px;
+  font-size: 14px;
 }
 
 .signupContainer .formField
@@ -312,7 +309,7 @@ img.brandImage
 
 .signupContainer input
 {
-  border-color: #c9c9c9;
+  width: 100%;
 }
 
 .signupContainer .md-button
@@ -326,13 +323,36 @@ img.brandImage
   font-weight: bold;
 }
 
+.signupForm
+{
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #00acc1 !important;
+}
+.formField
+{
+  width: 100%;
+}
+.formField label
+{
+  font-weight: bold;
+  font-size: 14px;
+}
+.formField input
+{
+  text-align: center;
+  border-color: #f5f7f8;
+  border-width: 1px;
+}
+
 
 .team
 {
   background-color: #c9c9c9;
 }
 .sectionContainer.team h2,
-.pricingSignup h2
+.signupContainer h2
 {
   margin-bottom: 20px;
 }
@@ -491,13 +511,7 @@ p.copyright
     margin-left: 0px;
   }
 
-
-  .pricing p
-  {
-    text-align: center;
-  }
-
-
+  .submitContainer,
   .md-button.requestAccess
   {
     width: 100%;
@@ -512,7 +526,7 @@ p.copyright
     padding-left: 10%;
     padding-right: 10%;
   }
-  .sectionContainer p
+  .sectionContainer p.sectionText
   {
     font-weight: normal;
     max-width: 80%;
@@ -523,18 +537,15 @@ p.copyright
     height:90vh;
     min-height: 400px;
   }
+
+  .pricing
+  {
+    min-width: 350px;
+  }
   .signupBar p
   {
     margin-right: 30px;
     min-width: 350px;
-  }
-
-  .pricing h2,
-  .pricing h3,
-  .pricing p,
-  .signupContainer h2
-  {
-    text-align: left;
   }
 }
 

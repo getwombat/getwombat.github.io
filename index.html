@@ -136,7 +136,7 @@ class="wombatBody">
       <a class="anchor" id="about"></a>
       <div flex layout="column" layout-align="center center">
         <h1>Freedom to focus on what matters most</h1>
-        <p >Wombat takes care of all your empathy marketing needs. From step-by-step message creation to auto-optimized message delivery, we've got you covered.<br><strong>No marketing skills necessary.</strong></p>
+        <p class="sectionText">Wombat takes care of all your empathy marketing needs. From step-by-step message creation to auto-optimized message delivery, we've got you covered.<br><strong>No marketing skills necessary.</strong></p>
         <img src="images/freedom.png"></img>
       </div>
     </div>
@@ -165,7 +165,7 @@ class="wombatBody">
     <div class="sectionContainer columnsContainer one">
       <div layout="column" layout-align="center center">
         <h2>Cubes: Your personal collection of in-app messages</h2>
-        <p>Wombat comes with a rich bank of customizable messages (called Cubes) to choose from.</p>
+        <p class="sectionText">Wombat comes with a rich bank of customizable messages (called Cubes) to choose from.</p>
         <div class="imageWrapper"
           layout="column" layout-align="center center">
           <img src="images/CubesWB.png"/>
@@ -176,7 +176,7 @@ class="wombatBody">
 
       <div layout="column" layout-align="center center">
         <h2>Simplified Cube creation</h2>
-        <p>Create your messages in minutes and continue upkeep only when you want to.</p>
+        <p class="sectionText">Create your messages in minutes and continue upkeep only when you want to.</p>
         <div class="imageWrapper"
           layout="column" layout-align="center center">
           <img src="images/heman_run.gif"/>
@@ -187,7 +187,7 @@ class="wombatBody">
 
       <div layout="column" layout-align="center center">
         <h2>Auto-optimized Cube delivery</h2>
-        <p>Our algorithms learn your users' behavior to understand which Cube is right for each person to see, and when.</p>
+        <p class="sectionText">Our algorithms learn your users' behavior to understand which Cube is right for each person to see, and when.</p>
         <div class="imageWrapper"
           layout="column" layout-align="center center">
           <img src="images/learning.jpeg"/>
@@ -198,7 +198,7 @@ class="wombatBody">
 
       <div layout="column" layout-align="center center">
         <h2>Simple to use, Powerful results</h2>
-        <p>Our platform is smart enough to optimize your relationships for you even if you set it and forget it.</p>
+        <p class="sectionText">Our platform is smart enough to optimize your relationships for you even if you set it and forget it.</p>
         <div class="imageWrapper"
           layout="column" layout-align="center center">
           <img src="images/relationship.jpeg"/>
@@ -207,43 +207,41 @@ class="wombatBody">
     </div>
 
 
-    <div class="sectionContainer pricingSignup" layout="column" layout-gt-xs="row">
-      <div class="pricing" flex-gt-xs="45" layout-align="start start" layout-align-xs="start center">
-        <a class="anchor" id="pricing"></a>
-        <h2>Pricing</h2>
-
-        <h3>SIGN UP <span class="wbBlue">FREE</span></h3>
-        <p class="freeTrial">6 month free trial - no strings attached.</p>
-        <p>After that, pricing will be based on month active users and will remain free forever if under 100MAU.</p>
-      </div>
-      <div class="pricingSpacer" hide show-gt-xs flex-gt-xs="10">
-      </div>
-      <div class="signupContainer anchor" flex-gt-xs="45">
-        <a class="anchor" id="signup"></a>
-        <h2>Become a Wombat Early Adopter</h2>
-        <form class="wmb-form" id="signupForm" name="signupForm">
-          <div class="formField" layout="column">
-            <label for="app_name">Your app's name</label>
-            <input type="text" name="app_name" placeholder="(2-20 characters)" id="app_name" tabindex="1" ng-model="user.appName" required minlength="2" maxlength="20" />
+    <div class="sectionContainer signupContainer"  layout="column" layout-align="center center">
+      <a class="anchor" id="signup"></a>
+      <h2>Become a Wombat Early Adopter</h2>
+      <div layout="row" layout-align="center center">
+        <div layout="column" layout-align="center center"
+          flex-gt-xs="50">
+          <div class="pricing" layout="column" layout-align="center center">
+            <h3>SIGN UP <span class="wbBlue">FREE</span></h3>
+            <p class="freeTrial">6 month free trial - no strings attached.</p>
+            <p class="mau">After that, pricing will be based on month active users and will remain free forever if under 100MAU.</p>
           </div>
-          <div class="formField" layout="column">
-            <label for="email_add">Your email address</label>
-            <input type="email" name="email_add" placeholder="(Your work email)" id="email_add" tabindex="2" ng-model="user.email" required />
-          </div>
-          <div class="formField" layout="column">
-            <label for="promo_code">Promo code</label>
-            <input type="text" name="promo_code" placeholder="(If you've got one)" id="promo_code" tabindex="3" ng-model="user.promoCode" />
-          </div>
-          <div class="field-box">
-            <div class="error-message" id="error-signup" >
-              <span ng-bind="signupFormError" ng-show="signupFormError"/>
+          <form class="signupForm" id="signupForm" name="signupForm" layout="column" layout-align="center center">
+            <div class="formField" layout="column" layout-align="center center">
+              <label for="app_name">Your app's name</label>
+              <input type="text" name="app_name" placeholder="(2-20 characters)" id="app_name" tabindex="1" ng-model="user.appName" required minlength="2" maxlength="20" />
             </div>
-          </div>
-          <div class="send-box">
-          <md-button class="requestAccess md-primary md-raised" tabindex="4" ng-click="requestAccess(signupForm)">Request access</md-button>
-          </div>
+            <div class="formField" layout="column" layout-align="center center">
+              <label for="email_add">Your email address</label>
+              <input type="email" name="email_add" placeholder="(Your work email)" id="email_add" tabindex="2" ng-model="user.email" required />
+            </div>
+            <div class="formField" layout="column" layout-align="center center">
+              <label for="promo_code">Promo code</label>
+              <input type="text" name="promo_code" placeholder="(If you've got one)" id="promo_code" tabindex="3" ng-model="user.promoCode" />
+            </div>
+            <div class="field-box">
+              <div class="error-message" id="error-signup" >
+                <span ng-bind="signupFormError" ng-show="signupFormError"/>
+              </div>
+            </div>
+            <div class="submitContainer">
+            <md-button class="requestAccess md-primary md-raised" tabindex="4" ng-click="requestAccess(signupForm)">Request access</md-button>
+            </div>
 
-        </form>
+          </form>
+        </div>
       </div>
     </div>
     <div class="team sectionContainer" layout="column">
