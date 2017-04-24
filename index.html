@@ -71,7 +71,7 @@ class="wombatBody">
             </md-button>
           </md-menu-item>
           <md-menu-item>
-            <md-button aria-label="Sign up" href="#signup" ng-click="ctrl.menuClicked()" target="_self">
+            <md-button class="md-raised md-primary" theme="wombatBlue" aria-label="Sign up" href="#signup" ng-click="ctrl.menuClicked()" target="_self">
               Sign up
             </md-button>
           </md-menu-item>
@@ -100,7 +100,9 @@ class="wombatBody">
       <md-button aria-label="Login" href="https://dash.getwombat.com/login">
         Login
       </md-button>
-      <md-button aria-label="Sign up" href="#signup" target="_self">
+      <md-button aria-label="Sign up" 
+        class="md-raised md-primary" md-theme="wombatBlue"
+        href="#signup" target="_self">
         Sign up
       </md-button>
 
@@ -133,36 +135,38 @@ class="wombatBody">
     </div>
     <div name="about" class="sectionContainer about" layout="column" layout-align="center start">
       <a class="anchor" id="about"></a>
-      <h2>Focus on what matters most</h2>
-      <p>Wombat takes care of all your empathy marketing needs.<br>From step-by-step message creation to auto-optimized message delivery,<br>we've got you covered. <strong>No marketing skills necessary.</strong></p>
+      <h2>Freedom to focus on what matters most</h2>
+      <div layout="row">
+        <p flex flex-gt-xs="60">Wombat takes care of all your empathy marketing needs. From step-by-step message creation to auto-optimized message delivery, we've got you covered. <strong>No marketing skills necessary.</strong></p>
+      </div>
     </div>
     <div class="sectionContainer">
-      <div class="columns" layout="column" layout-gt-xs="row" layout-align-gt-xs="space-between start">
+      <div class="columns" layout="column" layout-gt-xs="row" layout-align-gt-xs="start start">
         <div flex hide-gt-xs layout="column" layout-align="center center">
-          <img src="images/cubes.jpeg"/>
+          <img src="images/CubesWB.png"/>
         </div>
-        <div flex-gt-xs="40">
+        <div class="left" flex-gt-xs="40">
           <h3>Cubes: Your personal collection of in-app messages</h3>
           <p>Wombat comes with a rich bank of customizable messages (called Cubes) to choose from.</p>
         </div>
         <div flex-gt-xs="40" hide show-gt-xs layout="column" layout-align="center center">
-          <img src="images/cubes.jpeg"/>
+          <img src="images/CubesWB.png"/>
         </div>
       </div>
-      <div class="columns" layout="column" layout-gt-xs="row" layout-align-gt-xs="space-between center">
+      <div class="columns" layout="column" layout-gt-xs="row" layout-align-gt-xs="end center">
         <div flex-gt-xs="40" layout="column" layout-align="center center">
           <img src="images/heman_run.gif"/>
         </div>
-        <div flex-gt-xs="40">
+        <div class="right" flex-gt-xs="40">
           <h3>Simplified Cube creation</h3>
           <p>Create your messages in minutes and continue upkeep only when you want to.</p>
         </div>
       </div>
-      <div class="columns" layout="column" layout-gt-xs="row" layout-align-gt-xs="space-between center">
+      <div class="columns" layout="column" layout-gt-xs="row" layout-align-gt-xs="start center">
         <div flex hide-gt-xs layout="column" layout-align="center center">
           <img src="images/learning.jpeg"/>
         </div>
-        <div flex-gt-xs="40">
+        <div class="left" flex-gt-xs="40">
           <h3>Auto-optimized Cube delivery</h3>
           <p>Our algorithms learn your users' behavior to understand which Cube is right for each person to see, and when.</p>
         </div>
@@ -170,11 +174,11 @@ class="wombatBody">
           <img src="images/learning.jpeg"/>
         </div>
       </div>
-      <div class="columns" layout="column" layout-gt-xs="row" layout-align-gt-xs="space-between center">
+      <div class="columns" layout="column" layout-gt-xs="row" layout-align-gt-xs="end center">
         <div flex-gt-xs="40" layout="column" layout-align="center center">
           <img src="images/relationship.jpeg"/>
         </div>
-        <div flex-gt-xs="40">
+        <div class="right" flex-gt-xs="40">
           <h3>Simple to use, Powerful results</h3>
           <p>Our platform is smart enough to optimize your relationships for you even if you set it and forget it.</p>
         </div>
@@ -206,7 +210,7 @@ class="wombatBody">
         <span class="wbBlue">FREE</span></h3>
         <p>6 month free trial<br>No strings attached
         </p>
-        <p>After that, pricing will be based on month active users and will remain free forever if under 100MAU.)</p>
+        <p>After that, pricing will be based on month active users and will remain free forever if under 100MAU.</p>
       </div>
       <div class="pricingSpacer" hide show-gt-xs flex-gt-xs="10">
       </div>
@@ -270,7 +274,7 @@ class="wombatBody">
           <a href="mailto:support@getwombat.com" title="Winston - Chief Wombat Officer"/>
             <img class="avatar" src="images/wombat.png" />
           </a>
-          <span class="teamMemberName">Winson</span>
+          <span class="teamMemberName">Winston</span>
           <span class="teamMemberPosition">CWO</span>
         </div>
       </div>

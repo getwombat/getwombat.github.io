@@ -127,7 +127,7 @@ md-toolbar .logo-container
   background: -o-linear-gradient(right , #f74272, #00acc1); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right , #f74272, #00acc1); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right , #f74272, #00acc1); /* Standard syntax */
-  
+
   color: white;
 }
 }
@@ -137,6 +137,21 @@ md-toolbar .logo-container
 }
 
 
+.columns {
+  margin-bottom: 30px;
+}
+.columns .left
+{
+  margin-right: 20px;
+}
+.columns .right
+{
+  margin-left: 20px;
+}
+.sectionContainer .columns:last-of-type
+{
+  margin-bottom: 0px;
+}
 .columns img
 {
   width: 80%;
@@ -398,6 +413,15 @@ p.copyright
   .mainBodySection
   {
     background-position: 40%;
+  }
+
+  .columns .left
+  {
+    margin-right: 0px;
+  }
+  .columns .right
+  {
+    margin-left: 0px;
   }
 }
 

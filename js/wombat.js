@@ -17,24 +17,33 @@ wombatLandingPage.config(function($mdThemingProvider)
   $mdThemingProvider.definePalette('wombatYellow', wombatYellowMap);
 
   var wombatBlueMap = $mdThemingProvider.extendPalette('blue', {
-    '500': '#ff0000',
-    'A100': "#f6ca52",
+    '100': '#b2ebf2',
+    '200': '#80deea',
+    '500': '#00acc1',
+    '600': '#80deea',
+    'A100': "#80deea",
+    'contrastDefaultColor': 'light'
   });
   $mdThemingProvider.definePalette('wombatBlue', wombatBlueMap);
 
   $mdThemingProvider.theme('default')
     .primaryPalette('wombatYellow', {
-      'default': '500', // by default use shade 400 from the pink palette for primary intentions
-      'hue-1': '100', // use shade 100 for the <code>md-hue-1</code> class
-      'hue-2': '600', // use shade 600 for the <code>md-hue-2</code> class
-      'hue-3': 'A100' // use shade A100 for the <code>md-hue-3</code> class
+      'default': '500', 
+      'hue-1': '100',
+      'hue-2': '200',
+      'hue-3': 'A100'
     })
     // If you specify less than all of the keys, it will inherit from the
     // default shades
     .accentPalette('wombatBlue', {
     });
     $mdThemingProvider.theme('wombatBlue')
-      .primaryPalette('wombatBlue')
+      .primaryPalette('wombatBlue', {
+      'default': '500', // by default use shade 400 from the pink palette for primary intentions
+      'hue-1': '100', // use shade 100 for the <code>md-hue-1</code> class
+      'hue-2': '600', // use shade 600 for the <code>md-hue-2</code> class
+      'hue-3': 'A100' // use shade A100 for the <code>md-hue-3</code> class
+    })
 
 });
 wombatLandingPage.controller('LandingPageCtrl', 
