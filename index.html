@@ -220,15 +220,15 @@ class="wombatBody">
           </div>
           <form class="signupForm" id="signupForm" name="signupForm" layout="column" layout-align="center center">
             <div class="formField" layout="column" layout-align="center center">
-              <label for="app_name">Your app's name</label>
+              <label for="app_name">What's your app's name?</label>
               <input type="text" name="app_name" placeholder="(2-20 characters)" id="app_name" tabindex="1" ng-model="user.appName" required minlength="2" maxlength="20" />
             </div>
             <div class="formField" layout="column" layout-align="center center">
-              <label for="email_add">Your email address</label>
+              <label for="email_add">What's your email address?</label>
               <input type="email" name="email_add" placeholder="(Your work email)" id="email_add" tabindex="2" ng-model="user.email" required />
             </div>
             <div class="formField" layout="column" layout-align="center center">
-              <label for="promo_code">Promo code</label>
+              <label for="promo_code">Got a promo code?</label>
               <input type="text" name="promo_code" placeholder="(If you've got one)" id="promo_code" tabindex="3" ng-model="user.promoCode" />
             </div>
             <div class="field-box">
@@ -237,7 +237,7 @@ class="wombatBody">
               </div>
             </div>
             <div class="submitContainer">
-            <md-button class="requestAccess md-primary md-raised" tabindex="4" ng-click="requestAccess(signupForm)">Request access</md-button>
+            <md-button class="requestAccess md-primary md-raised" tabindex="4" ng-click="requestAccess(signupForm)">Sign up now</md-button>
             </div>
 
           </form>
