@@ -138,24 +138,84 @@ md-toolbar .logo-container
 
 
 .columns {
-  margin-bottom: 30px;
-}
-.columns .left
-{
-  margin-right: 20px;
-}
-.columns .right
-{
-  margin-left: 20px;
+  position: relative;
+  box-sizing: border-box;
 }
 .sectionContainer .columns:last-of-type
 {
   margin-bottom: 0px;
 }
-.columns img
+
+.columns .imageWrapper
 {
-  width: 80%;
-  height: auto;
+  position: relative;
+}
+.columns .imageWrapper img
+{
+  position: absolute;
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+.columns .cubeWrapper
+{
+  border-color: #607d8b;
+  border-style: solid;
+  border-width: 3px;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+}
+.cubeWrapper:after
+{
+  padding-top: 100%;
+  display: block;
+  content: '';
+}
+.cubeWrapper > div
+{
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.horizontalLine {
+  border-top: thick solid #607d8b;
+  width: 50%;
+}
+.connectorRight
+{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 40%;
+  height: 50%;
+  border-top: thick solid #607d8b;
+  border-right: thick solid #607d8b;
+  box-sizing: border-box;
+}
+
+.connectorLeft
+{
+  position: absolute;
+  top: 50%;
+  right: 40%;
+  width: 40%;
+  height: 50%;
+  border-top: thick solid #607d8b;
+  border-left: thick solid #607d8b;
+  box-sizing: border-box;
+}
+.verticalLine {
+  border-left: thick solid #607d8b;
+  height: 100%;
+}
+.verticalLine.phone
+{
+  height: 20px;
 }
 
 
