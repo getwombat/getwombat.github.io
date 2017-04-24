@@ -48,7 +48,7 @@ class="wombatBody">
     <div class="md-toolbar-tools" layout="row">
       <div class="logo-container">
         <a class="site-logo">
-          <img src="images/WombatLogo2-Light.png">
+          <img src="images/WombatLogo2.png">
         </a>
       </div>
       <div flex></div>
@@ -85,7 +85,7 @@ class="wombatBody">
     <div class="md-toolbar-tools">
       <div class="logo-container">
         <a class="site-logo">
-          <img src="images/WombatLogo2-Light.png">
+          <img src="images/WombatLogo2.png">
         </a>
       </div>
       <div flex="100"></div>
@@ -99,8 +99,8 @@ class="wombatBody">
       <md-button aria-label="Our Team" href="#team" target="_self">
         Our Team
       </md-button>
-      <md-button aria-label="Login" href="https://dash.getwombat.com/login">
-        Login
+      <md-button class="bordered" aria-label="Log In" href="https://dash.getwombat.com/login">
+        Log In
       </md-button>
       <md-button aria-label="Sign up" 
         class="md-raised md-primary" md-theme="wombatBlue"
@@ -113,11 +113,11 @@ class="wombatBody">
 
   <md-content>
     <div class="mainBodySection" layout="column" layout-align="center center">
-      <div class="sectionContainer" flex layout-fill layout="row" layout-align="start center">
-        <div layout="column" layout-align="center start" 
-        flex="90" flex-lg="60" flex-gt-xs="60">
+      <div class="sectionContainer" flex layout-fill layout="row" layout-align="center center">
+        <div layout="column" layout-align="center center">
+          <img class="headerImage" src="images/WombatPeeking.png">
           <h1>Changing the way apps & users interact</h1>
-          <h2>A next-generation in-app empathy marketing platform</h2>
+          <h3>A next-generation in-app empathy marketing platform</h3>
 
           <md-button class="md-raised md-primary" href="#signup" target="_self">Get started free</md-button>
         </div>
@@ -132,11 +132,12 @@ class="wombatBody">
     </div>
 
 
-    <div name="about" class="sectionContainer about" layout="column" layout-align="center start">
+    <div name="about" class="sectionContainer about" layout="row" layout-align="center center">
       <a class="anchor" id="about"></a>
-      <h2>Freedom to focus on what matters most</h2>
-      <div layout="row">
-        <p flex flex-gt-xs="60">Wombat takes care of all your empathy marketing needs. From step-by-step message creation to auto-optimized message delivery, we've got you covered. <strong>No marketing skills necessary.</strong></p>
+      <div flex layout="column" layout-align="center center">
+        <h1>Freedom to focus on what matters most</h1>
+        <p >Wombat takes care of all your empathy marketing needs. From step-by-step message creation to auto-optimized message delivery, we've got you covered.<br><strong>No marketing skills necessary.</strong></p>
+        <img src="images/freedom.png"></img>
       </div>
     </div>
 
@@ -161,92 +162,58 @@ class="wombatBody">
     </div>
 
 
-    <div class="sectionContainer columnsContainer">
-      <div class="columns" layout="column" layout-gt-xs="row" layout-align-gt-xs="start start">
-        <div class="left cubeWrapper">
-          <div layout="column">
-            <h3>Cubes: Your personal collection of in-app messages</h3>
-            <p>Wombat comes with a rich bank of customizable messages (called Cubes) to choose from.</p>
-            <div class="imageWrapper" flex
-              layout="column" layout-align="center center">
-              <img src="images/CubesWB.png"/>
-            </div>
-          </div>
+    <div class="sectionContainer columnsContainer one">
+      <div layout="column" layout-align="center center">
+        <h2>Cubes: Your personal collection of in-app messages</h2>
+        <p>Wombat comes with a rich bank of customizable messages (called Cubes) to choose from.</p>
+        <div class="imageWrapper"
+          layout="column" layout-align="center center">
+          <img src="images/CubesWB.png"/>
         </div>
+      </div>
+    </div>
+    <div class="sectionContainer columnsContainer two">
 
-        <div hide show-gt-xs class="connectorRight">
+      <div layout="column" layout-align="center center">
+        <h2>Simplified Cube creation</h2>
+        <p>Create your messages in minutes and continue upkeep only when you want to.</p>
+        <div class="imageWrapper"
+          layout="column" layout-align="center center">
+          <img src="images/heman_run.gif"/>
         </div>
       </div>
-      <div hide-gt-xs layout="column" layout-align="center center">
-        <div class="verticalLine phone"></div>
-      </div>
-      <div class="columns" layout="column" layout-gt-xs="row" layout-align-gt-xs="end center">
-        <div hide show-gt-xs class="connectorLeft">
-        </div>
-        <div hide show-gt-xs  flex-gt-md="40" flex-gt-xs="50"layout="column" layout-align="center center">
-        </div>
-        <div class="right cubeWrapper">
-          <div layout="column">
-            <h3>Simplified Cube creation</h3>
-            <p>Create your messages in minutes and continue upkeep only when you want to.</p>
-            <div class="imageWrapper" flex
-              layout="column" layout-align="center center">
-              <img src="images/heman_run.gif"/>
-            </div>
-          </div>
+    </div>
+    <div class="sectionContainer columnsContainer three">
+
+      <div layout="column" layout-align="center center">
+        <h2>Auto-optimized Cube delivery</h2>
+        <p>Our algorithms learn your users' behavior to understand which Cube is right for each person to see, and when.</p>
+        <div class="imageWrapper"
+          layout="column" layout-align="center center">
+          <img src="images/learning.jpeg"/>
         </div>
       </div>
-      <div hide-gt-xs layout="column" layout-align="center center">
-        <div class="verticalLine phone"></div>
-      </div>
-      <div class="columns" layout="column" layout-gt-xs="row" layout-align-gt-xs="start center">
-        <div class="left cubeWrapper">
-          <div layout="column">
-            <h3>Auto-optimized Cube delivery</h3>
-            <p>Our algorithms learn your users' behavior to understand which Cube is right for each person to see, and when.</p>
-            <div class="imageWrapper" flex
-              layout="column" layout-align="center center">
-              <img src="images/learning.jpeg"/>
-            </div>
-          </div>
-        </div>
-        <div hide show-gt-xs class="connectorRight">
-        </div>
-      </div>
-      <div hide-gt-xs layout="column" layout-align="center center">
-        <div class="verticalLine phone"></div>
-      </div>
-      <div class="columns" layout="column" layout-gt-xs="row" layout-align-gt-xs="end center">
-        <div  flex-gt-md="40" flex-gt-xs="50" layout="column" layout-align="center center">
-        </div>
-        <div class="right cubeWrapper">
-          <div layout="column">
-            <h3>Simple to use, Powerful results</h3>
-            <p>Our platform is smart enough to optimize your relationships for you even if you set it and forget it.</p>
-            <div class="imageWrapper" flex
-              layout="column" layout-align="center center">
-              <img src="images/relationship.jpeg"/>
-            </div>
-          </div>
+    </div>
+    <div class="sectionContainer columnsContainer four">
+
+      <div layout="column" layout-align="center center">
+        <h2>Simple to use, Powerful results</h2>
+        <p>Our platform is smart enough to optimize your relationships for you even if you set it and forget it.</p>
+        <div class="imageWrapper"
+          layout="column" layout-align="center center">
+          <img src="images/relationship.jpeg"/>
         </div>
       </div>
     </div>
 
 
     <div class="sectionContainer pricingSignup" layout="column" layout-gt-xs="row">
-      <div class="pricing" flex-gt-xs="45">
+      <div class="pricing" flex-gt-xs="45" layout-align="start start" layout-align-xs="start center">
         <a class="anchor" id="pricing"></a>
         <h2>Pricing</h2>
-        <div layout="row" layout-gt-xs="column">
-          <div flex-xs="40">
-            <h3>SIGN UP<br/>
-            <span class="wbBlue">FREE</span></h3>
-          </div>
-          <div flex-xs>
-            <p>6 month free trial<br>No strings attached
-            </p>
-          </div>
-        </div>
+
+        <h3>SIGN UP <span class="wbBlue">FREE</span></h3>
+        <p class="freeTrial">6 month free trial - no strings attached.</p>
         <p>After that, pricing will be based on month active users and will remain free forever if under 100MAU.</p>
       </div>
       <div class="pricingSpacer" hide show-gt-xs flex-gt-xs="10">
@@ -279,10 +246,10 @@ class="wombatBody">
         </form>
       </div>
     </div>
-    <div class="team sectionContainer">
+    <div class="team sectionContainer" layout="column">
       <a class="anchor" id="team"></a>
       <h2>Meet our team</h2>
-      <div layout="row" layout-wrap layout-align="space-between start">
+      <div layout="row" layout-wrap layout-align="space-around start">
         <div layout="column" class="teamMember" flex="40" flex-gt-xs="20" layout-align="start center">
           <a href="https://www.linkedin.com/in/adi-nouriel-48704284" title="Adi Nouriel - CEO and Co-Founder">
             <img class="avatar" src="images/adi.png" />
@@ -317,7 +284,7 @@ class="wombatBody">
       </div>
     </div>
     <div class="footer sectionContainer" layout="column">
-      <div class="links" layout="row" layout-wrap layout-align="space-between start">
+      <div class="links" layout="row" layout-wrap layout-align="space-around start">
         <div layout="column" layout-align="center">
           <h4>Wombat</h4>
           <a href="#about" target="_self">About</a>

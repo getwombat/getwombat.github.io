@@ -5,14 +5,24 @@ body,
 }
 .wombatBody md-toolbar
 {
-  background-color: #607d8b !important;
+  background-color: rgba(255, 255, 255, 0.85); !important;
   position:fixed; 
   z-index: 10;
 }
 
+.wombatBody h1,
+.wombatBody h2,
+.wombatBody h3,
+.wombatBody h4
+{
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
+}
+
 .wombatBody md-toolbar .md-button
 {
-  color: white;
+  color: #00acc1;
 }
 
 a.anchor {
@@ -48,27 +58,43 @@ md-toolbar .logo-container
 }
 .wombatBody md-toolbar md-icon.toolbarMenu 
 {
-  color: white; 
+  color: black; 
   font-size: 36px;
   height: 36px;
   width: 36px;
 }
 
+.md-button.bordered
+{
+  border: 1px solid #00acc1 !important;
+}
 
 .mainBodySection
 {
   margin-top: 64px;
-  background-image: url('../images/WhiteHipster.png');
-  background-size:cover;
+  background-color: white;
 }
 .mainBodySection h1
 {
   color: #00acc1;
 }
-.mainBodySection h1,
-.mainBodySection h2
+.headerImage
 {
+  width: 50%;
+  height: auto;
 }
+.mainBodySection h1,
+.mainBodySection h2,
+.mainBodySection h3
+{
+  text-align: center;
+}
+
+.mainBodySection h3
+{
+  font-weight: 300;
+}
+
 .mainBodySection .md-button
 {
   margin-top: 50px;
@@ -77,7 +103,11 @@ md-toolbar .logo-container
   padding-bottom: 10px;
   padding-right: 20px;
   padding-left: 20px;
-  font-weight: bold;
+  font-weight: normal;
+}
+.mainBodySection .md-button
+{
+  font-size: 18px;
 }
 
 .mainBodySection .sectionContainer
@@ -90,33 +120,14 @@ md-toolbar .logo-container
 }
 .learnMore a span
 {
-  font-weight: bold;
   font-size: 12px;
   margin-bottom: 10px;
 }
 .learnMore md-icon
 {
-  font-size: 48px;
-  width: 48px;
-  height: 48px;
-}
-
-
-.signupBar
-{
-  background-color: #eceff1;
-  padding-left: 10%;
-  padding-right: 10%;
-  width: 100%;
-  min-height: 64px;
-}
-.signupBar .md-button
-{
-  min-width: 200px;
-}
-.signupBar .signupSpacer
-{
-  width: 30%;
+  font-size: 36px;
+  width: 36px;
+  height: 36px;
 }
 
 
@@ -131,103 +142,61 @@ md-toolbar .logo-container
   background: -moz-linear-gradient(right , #f74272, #00acc1); /* For Firefox 3.6 to 15 * /
   background: linear-gradient(to right , #f74272, #00acc1); /* Standard syntax * /
 */
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 .about h2, .about p
 {
   color: white;
+  text-align: center;
 }
 
 .columnsContainer
 {
   background-color: #f5f7f8;
+}
+
+
+.columnsContainer img
+{
+  max-height: 60vh;
+}
+.columnsContainer.one,
+.columnsContainer.three,
+.pricingSignup
+{
   border-top: 1px solid #607d8b;
   border-bottom: 1px solid #607d8b;
 }
-.columns {
-  position: relative;
-  box-sizing: border-box;
+
+.columnsContainer.two
+{
+  background-color: white;
 }
+.columnsContainer.three
+{
+  background-color: #eceff1;
+
+}
+
+.columnsContainer.four
+{
+  background-color: white;
+}
+
 .columnsContainer .columns:last-of-type
 {
   margin-bottom: 0px;
 }
 
-.columns .imageWrapper
-{
-  position: relative;
-}
-.columns .imageWrapper img
-{
-  position: absolute;
-  height: 100%;
-  width: auto;
-  object-fit: contain;
-}
-.columns .cubeWrapper
-{
-  display: inline-block;
-  position: relative;
-  box-sizing: border-box;
-  z-index: 2;
-}
-.cubeWrapper:after
-{
-  padding-top: 100%;
-  display: block;
-  content: '';
-}
-.cubeWrapper > div
-{
-  padding: 20px;
-  padding-top: 0px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-
-  border-color: #607d8b;
-  border-style: solid;
-  border-width: 1px;
-  background-color: white;
-}
-.cubeWrapper p
-{
-  margin-top: 0px;
-}
 .horizontalLine {
   border-top: 3px solid #607d8b;
   width: 50%;
 }
-.connectorRight
-{
-  position: absolute;
-  top: 50%;
-  left: 33%;
-  width: 50%;
-  height: 50%;
-  border-top: 3px solid #607d8b;
-  border-right: 3px solid #607d8b;
-  box-sizing: border-box;
-}
 
-.connectorLeft
-{
-  position: absolute;
-  top: 50%;
-  right: 33%;
-  width: 50%;
-  height: 50%;
-  border-top: 3px solid #607d8b;
-  border-left: 3px solid #607d8b;
-  box-sizing: border-box;
-}
-.verticalLine {
-  border-left: thick solid #607d8b;
-  height: 100%;
-}
 .verticalLine.phone
 {
+  border-left: thick solid #607d8b;
   height: 20px;
 }
 
@@ -260,6 +229,10 @@ img.brandImage
   font-weight: bold;
   text-align: center;
   overflow: hidden;
+}
+.referrer
+{
+  font-weight: normal;
 }
 
 .testimonials md-content
@@ -307,12 +280,18 @@ img.brandImage
 
 .pricingSignup
 {
-  background-color: white;
+  background-color: #f5f7f8;
 }
 
 .pricing h3
 {
   font-weight: bold;
+}
+
+.pricing p.freeTrial
+{
+  margin: 0;
+  margin-top: 10px;
 }
 
 .pricingSpacer
@@ -322,7 +301,7 @@ img.brandImage
 
 .signupContainer
 {
-  background-color: white;
+  background-color: transparent;
   padding-top: 0px;
 }
 
@@ -350,7 +329,12 @@ img.brandImage
 
 .team
 {
-  background-color: #eceff1;
+  background-color: #c9c9c9;
+}
+.sectionContainer.team h2,
+.pricingSignup h2
+{
+  margin-bottom: 20px;
 }
 
 .teamMember
@@ -507,6 +491,13 @@ p.copyright
     margin-left: 0px;
   }
 
+
+  .pricing p
+  {
+    text-align: center;
+  }
+
+
   .md-button.requestAccess
   {
     width: 100%;
@@ -515,6 +506,19 @@ p.copyright
 
 @media screen and (min-width:600px)
 {
+
+  .wombatBody md-toolbar
+  {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .sectionContainer p
+  {
+    font-weight: normal;
+    max-width: 80%;
+    text-align: center;
+  }
+
   .mainBodySection {
     height:90vh;
     min-height: 400px;
@@ -525,51 +529,15 @@ p.copyright
     min-width: 350px;
   }
 
-  .columnsContainer
-  { 
-    padding-left: 17%;
-    padding-right: 17%;
-  }
-  .columns .cubeWrapper
+  .pricing h2,
+  .pricing h3,
+  .pricing p,
+  .signupContainer h2
   {
-    width: 40%;
-  }
-  .cubeWrapper.left > div
-  {
-    right: 10px;
-  }
-  .cubeWrapper.right > div
-  {
-    left: 10px;
+    text-align: left;
   }
 }
 
 @media screen and (min-width:600px)  and (max-width:1279px)
 {
-  .columnsContainer
-  { 
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
-  .connectorRight
-  {
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    width: 50%;
-  }
-
-  .connectorLeft
-  {
-    position: absolute;
-    top: 50%;
-    right: 40%;
-    width: 50%;
-    height: 50%;
-  }
-  .columns .cubeWrapper
-  {
-    width: 45%;
-  }
 }

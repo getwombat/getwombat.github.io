@@ -115,12 +115,12 @@ wombatLandingPage.controller('LandingPageCtrl',
     var testimonialCount=0;
     $scope.testimonials = [
     {
-      text:'"I wanted to reach out and let you personally know the Prattle team and users really like Wombat."<br/>- Brayson Ware, <a href="http://letsprattle.com">Prattle COO</a>',
+      text:'"I wanted to reach out and let you personally know the Prattle team and users really like Wombat."<br/><span class="referrer">-Brayson Ware, <a href="http://letsprattle.com">Prattle COO</a></span>',
       image:'prattle.png',
       index:testimonialCount++
     },
     {
-      text:'"Whoa, that really was easier than I expected!"<br/>- Daniel Reidler, <a href="https://www.wemealapp.com/">WeMeal</a>',
+      text:'"Whoa, that really was easier than I expected!"<br/><span class="referrer">- Daniel Reidler, <a href="https://www.wemealapp.com/">WeMeal</a></span>',
       image:'wemeal.png',
       index:testimonialCount++
     }

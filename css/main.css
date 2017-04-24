@@ -52,6 +52,11 @@ h1, h2
   margin: 0px;
 }
 
+input
+{
+  outline-color: #fbb811;
+}
+
 a,
 a md-icon
 {
