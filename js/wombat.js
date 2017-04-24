@@ -233,8 +233,6 @@ wombatLandingPage.controller('LandingPageCtrl',
       $timeout(function(){
         $scope.preloaderHidden = true;
       },500);
-
-      updateTimeToItem()
     }
 
     var textChangeTimes = 0;
@@ -279,5 +277,11 @@ wombatLandingPage.controller('LandingPageCtrl',
     {
       if(!isInView) return;
       updateTestimonialTab();
+    }
+
+    this.shouldUpdateTimeTo = function(isInView)
+    {
+      if(!isInView) return;
+      updateTimeToItem();
     }
   });

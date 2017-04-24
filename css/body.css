@@ -176,11 +176,16 @@ md-toolbar .logo-container
 .cubeWrapper > div
 {
   padding: 20px;
+  padding-top: 0px;
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
+}
+.cubeWrapper p
+{
+  margin-top: 0px;
 }
 .horizontalLine {
   border-top: thick solid #607d8b;
