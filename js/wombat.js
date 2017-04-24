@@ -2,11 +2,19 @@ var wombatLandingPage = angular.module('wombatLandingPage',
   ['ngResource', 
   'ngRoute',
   'ngMaterial',
-  'ngSanitize']);
+  'ngSanitize',
+  'angular-inview']);
 wombatLandingPage.config(function($mdIconProvider) {
   $mdIconProvider
     .defaultIconSet('MaterialIcons/mdi.svg')
 });
+wombatLandingPage.config(function($locationProvider) {
+  $locationProvider.html5Mode({
+    enabled: true,
+    requireBase: false,
+    rewriteLinks: false
+  });
+})
 wombatLandingPage.config(function($mdThemingProvider) 
 {
   var wombatYellowMap = $mdThemingProvider.extendPalette('yellow', {
@@ -60,6 +68,7 @@ wombatLandingPage.controller('LandingPageCtrl',
     $scope.signupFormError = null;
 
     $scope.preloaderHidden = false;
+
 
     var timeToItems = [
     {
@@ -226,7 +235,6 @@ wombatLandingPage.controller('LandingPageCtrl',
       },500);
 
       updateTimeToItem()
-      updateTestimonialTab();
     }
 
     var textChangeTimes = 0;
@@ -256,7 +264,7 @@ wombatLandingPage.controller('LandingPageCtrl',
 
     var updateTestimonialTab = function()
     {
-      var nextChange = 5000;
+      var nextChange = 3000;
       $timeout(function(){
 
         $scope.testimonialIndex++;
@@ -266,5 +274,10 @@ wombatLandingPage.controller('LandingPageCtrl',
         }
         updateTestimonialTab();
       },nextChange);
+    }
+    this.shouldUpdateTestimonial = function(isInView)
+    {
+      if(!isInView) return;
+      updateTestimonialTab();
     }
   });

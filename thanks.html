@@ -1,0 +1,160 @@
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <style type="text/css">
+    body,
+    input
+    {
+      font-family: 'Open Sans', sans-serif;
+    }
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+    
+    .wombatLogo
+    {
+      margin-left: 5vw;
+      height: 50px;
+      max-height: 50px;
+      width: auto;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    .socialIcons
+    {
+      padding: 10px;
+    }
+    .socialIcons a
+    {
+      margin-left: 10px;
+      color: white;
+    }
+
+    .socialIcons a img
+    {
+      height: 25px;
+      width: auto;
+    }
+
+    .socialIcon:hover
+    {
+      color: #00acc1;
+    }
+
+    .socialIcons:hover img path
+    {
+      fill: #00acc1;
+    }
+    .socialIcon
+    {
+      font-size: 25px;
+      display: inline-block;
+    }
+
+
+    .thanksTextContainer
+    {
+      max-width: 80%;
+    }
+    .thanksTextContainer h1,
+    .thanksTextContainer p
+    {
+      color: white;
+      text-align: center;
+    }
+
+    body,
+    md-content
+    {
+      background-color: black;
+      background-image:url('images/hooray.jpg');
+      background-repeat:no-repeat;
+      background-size: cover;
+      background-position:center;
+    }
+
+  </style>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1782532585301303'); // Insert your pixel ID here.
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1782532585301303&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- DO NOT MODIFY -->
+  <!-- End Facebook Pixel Code -->
+
+</head>
+<body ng-app="wombatThanks">
+  <md-content layout="column" layout-fill>
+    <div class="topBar" layout="row" layout-align="space-between start">
+      <a href="index.html">
+        <img src="images/WombatLogo2.png" class="wombatLogo">
+      </a>
+      
+      <div class="socialIcons" layout="row">
+        <a href="https://www.twitter.com/getwombat">
+          <div class="ion-social-twitter-outline socialIcon"></div>
+        </a>
+        <a href="https://www.facebook.com/getwombat">
+          <div class="ion-social-facebook-outline socialIcon"></div>
+        </a>
+        <a href="https://www.linkedin.com/company/wombat---wom-solutions">
+          <div class="ion-social-linkedin-outline socialIcon"></div>
+        </a>
+        <a href="https://blog.getwombat.com">
+          <div class="ion-social-wordpress-outline socialIcon"></div>
+        </a>
+        <a href="mailto:support@getwombat.com">
+          <div class="ion-ios-email-outline socialIcon"></div>
+        </a>
+        <!--
+        <a class="cubesAppLink" href="https://itunes.apple.com/us/app/cubes-app-preview-your-wombat/id1183723221?mt=8">
+          <md-icon md-svg-src="images/WombatFaceCubesApp.svg" style="color:black;"></md-icon>
+        </a>-->
+      </div>
+    </div>
+    <div flex layout="column" layout-align="center center">
+      <div class="thanksTextContainer" layout="column" layout-align="center center">
+        <h1>THANKS FOR SIGNING UP!</h1>
+        <p>We're so psyched to show you our awesome platform. We'll send your account details soon.</p>
+        <p>Know anyone who would also benefit from Wombat? Tell them! We have a special place in our hearts for word of mouth.</p>
+      </div>
+    </div>
+  </md-content>
+
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-resource.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+  <script type="text/javascript">
+    var wombatThanks = angular.module('wombatThanks', ['ngResource', 'ngMaterial']);
+  </script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-71431554-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</body>

@@ -210,7 +210,7 @@ class="wombatBody">
         </div>
       </div>
     </div>
-    <div class="testimonials" layout="column" layout-align="center center">
+    <div class="testimonials" layout="column" layout-align="center center" in-view="ctrl.shouldUpdateTestimonial($inview)">
       <div class="testimonialTabContainer">
         <md-tabs md-autoselect="" md-selected="testimonialIndex" >
           <md-tab ng-repeat="tab in testimonials" label="{{tab.title}}">
@@ -262,7 +262,7 @@ class="wombatBody">
             </div>
           </div>
           <div class="send-box">
-          <md-button class="md-primary md-raised" tabindex="4" ng-click="requestAccess(signupForm)">Request access</md-button>
+          <md-button class="requestAccess md-primary md-raised" tabindex="4" ng-click="requestAccess(signupForm)">Request access</md-button>
           </div>
 
         </form>
@@ -363,6 +363,9 @@ class="wombatBody">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-resource.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-sanitize.min.js"></script>
+
+
+<script src="packages/angular-inview/angular-inview.js"></script>
 
 <!-- Angular Material Library -->
 <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
