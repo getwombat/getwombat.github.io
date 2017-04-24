@@ -77,7 +77,7 @@ wombatLandingPage.controller('LandingPageCtrl',
     },
     {
       text:"enjoy your coffee.",
-      color:"#6f4e37"
+      color:"#c19d67"
     },
     {
       text:"smell the flowers.",
@@ -85,7 +85,7 @@ wombatLandingPage.controller('LandingPageCtrl',
     },
     {
       text:"promote your app.",
-      color:"#3232ff"
+      color:"#b2ebf2"
     },
     {
       text:"design new features.",
@@ -97,7 +97,7 @@ wombatLandingPage.controller('LandingPageCtrl',
     },
     {
       text:"meditate.",
-      color:"#445942"
+      color:"#eceff1"
     }
     ]
     var appSucceedItem = timeToItems[0];

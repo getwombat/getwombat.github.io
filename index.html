@@ -1,5 +1,7 @@
 <html lang="en" >
 <head>
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:url"              content="http://getwombat.com" />
@@ -120,19 +122,16 @@ class="wombatBody">
           <md-button class="md-raised md-primary" href="#signup" target="_self">Get started free</md-button>
         </div>
       </div>
+
       <div class="learnMore" layout="column" layout-align="center center">
           <a href="#about" target="_self" layout="column" layout-align="center center">
             <span>Learn more</span>
             <md-icon md-font-icon="mdi mdi-arrow-down"></md-icon>
           </a>
       </div>
-
-      <!--
-      <div class="signupBar" layout="column" layout-gt-xs="row" layout-align="space-between center">
-          <p><span class="highlight">We</span> take care of creating delightful interactions<br>with your users, so <span class="highlight">you</span> have time to<br><span class="changingTextDefault" ng-style="{'color':selectedTimeItem.color }">{{selectedTimeItem.text}}</span></p>
-        </div>
-      </div>-->
     </div>
+
+
     <div name="about" class="sectionContainer about" layout="column" layout-align="center start">
       <a class="anchor" id="about"></a>
       <h2>Freedom to focus on what matters most</h2>
@@ -140,9 +139,31 @@ class="wombatBody">
         <p flex flex-gt-xs="60">Wombat takes care of all your empathy marketing needs. From step-by-step message creation to auto-optimized message delivery, we've got you covered. <strong>No marketing skills necessary.</strong></p>
       </div>
     </div>
-    <div class="sectionContainer">
+
+
+    <div class="testimonials" layout="column" layout-align="center center" in-view="ctrl.shouldUpdateTestimonial($inview)">
+      <div class="testimonialTabContainer">
+        <md-tabs md-autoselect="" md-selected="testimonialIndex" >
+          <md-tab ng-repeat="tab in testimonials" label="{{tab.title}}">
+            <md-content layout-align="center center" layout="column">
+              <div layout="row">
+                <!--<img class="brandImage" ng-src="images/{{tab.image}}"></img>-->
+                <p class="noMargins" ng-bind-html="tab.text"></p>
+              </div>
+            </md-content>
+          </md-tab>
+        </md-tabs>
+      </div>
+      <div layout="row" layout-align="center center">
+        <div class="testimonialScroller" ng-class="tab.index == testimonialIndex ? 'selected ' : ' '" ng-repeat="tab in testimonials" ng-click="selectTestimonial(tab)">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="sectionContainer columnsContainer">
       <div class="columns" layout="column" layout-gt-xs="row" layout-align-gt-xs="start start">
-        <div class="left cubeWrapper" flex-gt-xs="40">
+        <div class="left cubeWrapper">
           <div layout="column">
             <h3>Cubes: Your personal collection of in-app messages</h3>
             <p>Wombat comes with a rich bank of customizable messages (called Cubes) to choose from.</p>
@@ -162,9 +183,9 @@ class="wombatBody">
       <div class="columns" layout="column" layout-gt-xs="row" layout-align-gt-xs="end center">
         <div hide show-gt-xs class="connectorLeft">
         </div>
-        <div flex-gt-xs="40" layout="column" layout-align="center center">
+        <div hide show-gt-xs  flex-gt-md="40" flex-gt-xs="50"layout="column" layout-align="center center">
         </div>
-        <div class="right cubeWrapper" flex-gt-xs="40">
+        <div class="right cubeWrapper">
           <div layout="column">
             <h3>Simplified Cube creation</h3>
             <p>Create your messages in minutes and continue upkeep only when you want to.</p>
@@ -179,7 +200,7 @@ class="wombatBody">
         <div class="verticalLine phone"></div>
       </div>
       <div class="columns" layout="column" layout-gt-xs="row" layout-align-gt-xs="start center">
-        <div class="left cubeWrapper" flex-gt-xs="40">
+        <div class="left cubeWrapper">
           <div layout="column">
             <h3>Auto-optimized Cube delivery</h3>
             <p>Our algorithms learn your users' behavior to understand which Cube is right for each person to see, and when.</p>
@@ -196,9 +217,9 @@ class="wombatBody">
         <div class="verticalLine phone"></div>
       </div>
       <div class="columns" layout="column" layout-gt-xs="row" layout-align-gt-xs="end center">
-        <div flex-gt-xs="40" layout="column" layout-align="center center">
+        <div  flex-gt-md="40" flex-gt-xs="50" layout="column" layout-align="center center">
         </div>
-        <div class="right cubeWrapper" flex-gt-xs="40">
+        <div class="right cubeWrapper">
           <div layout="column">
             <h3>Simple to use, Powerful results</h3>
             <p>Our platform is smart enough to optimize your relationships for you even if you set it and forget it.</p>
@@ -210,32 +231,22 @@ class="wombatBody">
         </div>
       </div>
     </div>
-    <div class="testimonials" layout="column" layout-align="center center" in-view="ctrl.shouldUpdateTestimonial($inview)">
-      <div class="testimonialTabContainer">
-        <md-tabs md-autoselect="" md-selected="testimonialIndex" >
-          <md-tab ng-repeat="tab in testimonials" label="{{tab.title}}">
-            <md-content layout-align="center center" layout="column">
-              <div layout="row">
-                <!--<img class="brandImage" ng-src="images/{{tab.image}}"></img>-->
-                <p class="noMargins" ng-bind-html="tab.text"></p>
-              </div>
-            </md-content>
-          </md-tab>
-        </md-tabs>
-      </div>
-      <div layout="row" layout-align="center center">
-        <div class="testimonialScroller" ng-class="tab.index == testimonialIndex ? 'selected ' : ' '" ng-repeat="tab in testimonials" ng-click="selectTestimonial(tab)">
-        </div>
-      </div>
-    </div>
+
+
     <div class="sectionContainer pricingSignup" layout="column" layout-gt-xs="row">
       <div class="pricing" flex-gt-xs="45">
         <a class="anchor" id="pricing"></a>
         <h2>Pricing</h2>
-        <h3>SIGN UP<br/>
-        <span class="wbBlue">FREE</span></h3>
-        <p>6 month free trial<br>No strings attached
-        </p>
+        <div layout="row" layout-gt-xs="column">
+          <div flex-xs="40">
+            <h3>SIGN UP<br/>
+            <span class="wbBlue">FREE</span></h3>
+          </div>
+          <div flex-xs>
+            <p>6 month free trial<br>No strings attached
+            </p>
+          </div>
+        </div>
         <p>After that, pricing will be based on month active users and will remain free forever if under 100MAU.</p>
       </div>
       <div class="pricingSpacer" hide show-gt-xs flex-gt-xs="10">
@@ -310,7 +321,7 @@ class="wombatBody">
         <div layout="column" layout-align="center">
           <h4>Wombat</h4>
           <a href="#about" target="_self">About</a>
-          <a href="#team" target="_self">Team</a>
+          <a href="#team" target="_self">Our team</a>
           <a href="https://itunes.apple.com/us/app/cubes-app-preview-your-wombat-cubes/id1183723221?mt=8">Cubes App</a>
         </div>
         <div layout="column">
@@ -343,9 +354,11 @@ class="wombatBody">
           <md-icon md-svg-src="images/WombatFaceCubesApp.svg" style="color:black;"></md-icon>
         </a>-->
       </div>
-      <div layout="column" layout=align="center center">
+      <div layout="column" layout-align="center center">
         <p class="copyright">Copyright © Wombat 2017</p>
+        <div class="whiteDividerLine"></div>
       </div>
+
 
       <div in-view="ctrl.shouldUpdateTimeTo($inview)" layout="column" layout-align="center center">
         <p class="timeto"><span class="highlight">We</span> take care of creating<br>delightful interactions with your users,<br>so <span class="highlight">you</span> have time to<br><span class="changingTextDefault" ng-style="{'color':selectedTimeItem.color }">{{selectedTimeItem.text}}</span></p>

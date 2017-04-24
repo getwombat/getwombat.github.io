@@ -122,26 +122,32 @@ md-toolbar .logo-container
 
 .about
 {
-  background-color: #00acc1;/* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left , #f74272, #00acc1); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right , #f74272, #00acc1); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right , #f74272, #00acc1); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right , #f74272, #00acc1); /* Standard syntax */
-
+  background-color: #00acc1;
   color: white;
-}
+  /*
+  background-color: #00acc1;/ * For browsers that do not support gradients * /
+  background: -webkit-linear-gradient(left , #f74272, #00acc1); /* For Safari 5.1 to 6.0 * /
+  background: -o-linear-gradient(right , #f74272, #00acc1); /* For Opera 11.1 to 12.0 * /
+  background: -moz-linear-gradient(right , #f74272, #00acc1); /* For Firefox 3.6 to 15 * /
+  background: linear-gradient(to right , #f74272, #00acc1); /* Standard syntax * /
+*/
 }
 .about h2, .about p
 {
   color: white;
 }
 
-
+.columnsContainer
+{
+  background-color: #f5f7f8;
+  border-top: 1px solid #607d8b;
+  border-bottom: 1px solid #607d8b;
+}
 .columns {
   position: relative;
   box-sizing: border-box;
 }
-.sectionContainer .columns:last-of-type
+.columnsContainer .columns:last-of-type
 {
   margin-bottom: 0px;
 }
@@ -159,13 +165,10 @@ md-toolbar .logo-container
 }
 .columns .cubeWrapper
 {
-  border-color: #607d8b;
-  border-style: solid;
-  border-width: 3px;
-  width: 100%;
   display: inline-block;
   position: relative;
   box-sizing: border-box;
+  z-index: 2;
 }
 .cubeWrapper:after
 {
@@ -182,24 +185,29 @@ md-toolbar .logo-container
   bottom: 0;
   right: 0;
   left: 0;
+
+  border-color: #607d8b;
+  border-style: solid;
+  border-width: 1px;
+  background-color: white;
 }
 .cubeWrapper p
 {
   margin-top: 0px;
 }
 .horizontalLine {
-  border-top: thick solid #607d8b;
+  border-top: 3px solid #607d8b;
   width: 50%;
 }
 .connectorRight
 {
   position: absolute;
   top: 50%;
-  left: 40%;
-  width: 40%;
+  left: 33%;
+  width: 50%;
   height: 50%;
-  border-top: thick solid #607d8b;
-  border-right: thick solid #607d8b;
+  border-top: 3px solid #607d8b;
+  border-right: 3px solid #607d8b;
   box-sizing: border-box;
 }
 
@@ -207,11 +215,11 @@ md-toolbar .logo-container
 {
   position: absolute;
   top: 50%;
-  right: 40%;
-  width: 40%;
+  right: 33%;
+  width: 50%;
   height: 50%;
-  border-top: thick solid #607d8b;
-  border-left: thick solid #607d8b;
+  border-top: 3px solid #607d8b;
+  border-left: 3px solid #607d8b;
   box-sizing: border-box;
 }
 .verticalLine {
@@ -235,7 +243,7 @@ md-toolbar .logo-container
 }
 .testimonials
 {
-  background-color: #B0BDC5;
+  background-color: white;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -257,7 +265,7 @@ img.brandImage
 .testimonials md-content
 {
   height: 100px;
-  background-color: #B0BDC5;
+  background-color: white;
 }
 
 
@@ -458,7 +466,17 @@ p.copyright
   font-weight: bold;
 }
 
-@media screen and (max-width:600px)
+.whiteDividerLine
+{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 300px;
+  max-width: 100%;
+
+  border-top: 1px solid white;
+}
+
+@media screen and (max-width:599px)
 {
   .signupBar
   {
@@ -495,7 +513,7 @@ p.copyright
   }
 }
 
-@media screen and (min-width:601px)
+@media screen and (min-width:600px)
 {
   .mainBodySection {
     height:90vh;
@@ -505,5 +523,53 @@ p.copyright
   {
     margin-right: 30px;
     min-width: 350px;
+  }
+
+  .columnsContainer
+  { 
+    padding-left: 17%;
+    padding-right: 17%;
+  }
+  .columns .cubeWrapper
+  {
+    width: 40%;
+  }
+  .cubeWrapper.left > div
+  {
+    right: 10px;
+  }
+  .cubeWrapper.right > div
+  {
+    left: 10px;
+  }
+}
+
+@media screen and (min-width:600px)  and (max-width:1279px)
+{
+  .columnsContainer
+  { 
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .connectorRight
+  {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 50%;
+  }
+
+  .connectorLeft
+  {
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    width: 50%;
+    height: 50%;
+  }
+  .columns .cubeWrapper
+  {
+    width: 45%;
   }
 }
