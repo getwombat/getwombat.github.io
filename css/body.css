@@ -408,7 +408,7 @@ img.brandImage
   max-width: 150px;
   height: auto;
   border-radius: 50%;
-  border-width: 3px;
+  border-width: 1px;
   border-style: solid;
   border-color: #00acc1;
 }
@@ -416,6 +416,7 @@ img.brandImage
 .team .avatar:hover
 { 
   border-color: #80deea;
+  border-width: 3px;
 }
 
 
@@ -440,6 +441,11 @@ img.brandImage
 .footer .links a
 {
   text-align: center;
+  font-size: 14px;
+}
+.footer a
+{
+  text-decoration: none;
 }
 
 .socialIcons
@@ -582,4 +588,13 @@ p.copyright
 
 @media screen and (min-width:600px)  and (max-width:1279px)
 {
+}
+
+
+@media screen and (min-width:1280px)
+{
+  .sectionContainer p.sectionText
+  {
+    max-width: 60%;
+  }
 }
