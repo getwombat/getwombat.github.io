@@ -148,13 +148,18 @@ md-toolbar .logo-container
   background: -moz-linear-gradient(right , #f74272, #00acc1); /* For Firefox 3.6 to 15 * /
   background: linear-gradient(to right , #f74272, #00acc1); /* Standard syntax * /
 */
-  margin-bottom: 0px;
-  padding-bottom: 0px;
 }
 .about h2, .about p
 {
   color: white;
   text-align: center;
+}
+
+.about img
+{
+  max-height: 60vh;
+  min-height: 150px !important;
+  max-width: 50vw;
 }
 
 .columnsContainer
@@ -170,13 +175,13 @@ md-toolbar .logo-container
 .columnsContainer.one,
 .columnsContainer.three
 {
-  border-top: 1px solid #607d8b;
-  border-bottom: 1px solid #607d8b;
+  border-top: 1px solid #c9c9c9;
+  border-bottom: 1px solid #c9c9c9;
 }
 
 .columnsContainer.four
 {
-  border-bottom: 1px solid #607d8b;
+  border-bottom: 1px solid #c9c9c9;
 }
 
 .columnsContainer.two
@@ -198,19 +203,6 @@ md-toolbar .logo-container
 {
   margin-bottom: 0px;
 }
-
-.horizontalLine {
-  border-top: 3px solid #607d8b;
-  width: 50%;
-}
-
-.verticalLine.phone
-{
-  border-left: thick solid #607d8b;
-  height: 20px;
-}
-
-
 
 .testimonials
 {
