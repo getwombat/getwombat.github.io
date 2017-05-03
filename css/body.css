@@ -360,6 +360,10 @@ img.brandImage
 {
   color: #f74272;
 }
+.error-message
+{
+  font-size: 13px;
+}
 
 
 .team
@@ -428,16 +432,26 @@ img.brandImage
 
 .footer .links
 {
-  margin-bottom: 20px;
+}
+
+.footer .links h4
+{
+  margin-bottom: 10px;
 }
 .footer .links a
 {
   text-align: center;
   font-size: 14px;
+  margin-bottom: 5px;
 }
 .footer a
 {
   text-decoration: none;
+}
+.footer .links > div
+{
+  min-width: 120px;
+  margin-bottom: 20px;
 }
 
 .socialIcons
@@ -446,8 +460,6 @@ img.brandImage
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
-  width: 25%;
-  min-width: 200px;
 }
 .socialIcons a
 {
@@ -474,6 +486,8 @@ img.brandImage
 {
   font-size: 25px;
   display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 p.copyright
 {
@@ -545,11 +559,18 @@ p.copyright
   {
     top: -56px;
   }
+  .footer {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 @media screen and (min-width:600px)
 {
-
+  p
+  {
+    line-height: 1.5;
+  }
   .wombatBody md-toolbar
   {
     padding-left: 10%;
@@ -575,6 +596,10 @@ p.copyright
   {
     margin-right: 30px;
     min-width: 350px;
+  }
+  .footer {
+    padding-left: 20%;
+    padding-right: 20%;
   }
 }
 
