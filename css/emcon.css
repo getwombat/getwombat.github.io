@@ -43,6 +43,12 @@ body
   margin-bottom: 20px;
 }
 
+.shelfExtension
+{
+  background-color: white;
+  height: 46px;
+}
+
 .heading h2
 {
   text-align: center;
@@ -67,6 +73,13 @@ body
 .rightContent
 {
   margin-bottom: 50px;
+}
+
+.leftContent h2
+{
+  margin-top: -10px;
+  margin-bottom: 20px;
+  font-size: 1.6em;
 }
 
 @media screen and (max-width:600px)
