@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Loved+by+the+King');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+body
+{
+  background-color: white !important;
+}
+.heading
+{
+  background-color: #fbb811;
+  position: relative;
+}
+
+.heading img
+{
+  max-width: 80%;
+}
+.headingContainer
+{
+  min-height: 200px;
+}
+.heading h2
+{
+  color: white;
+}
+.mainSection
+{
+  background-color: white;
+}
+
+.mainSection h1
+{
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 72px;
+}
+.mainSection .rightContent h1
+{
+  color: #fbb811;
+  font-size: 100px;
+  line-height: 70px;
+  margin-top: -4px;
+  margin-bottom: 20px;
+}
+
+.heading h2
+{
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.mainSection h1,
+.mainSection h2,
+.mainSection p
+{
+  margin: 0;
+  text-align: center;
+}
+
+.dateText
+{
+  color: #00acc1;
+  margin-top: 20px;
+}
+
+.leftContent,
+.rightContent
+{
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width:600px)
+{
+  .mainSection .leftContent
+  {
+    margin-top: 50px;
+  }
+  .mainSection .rightContent
+  {
+  }
+}
+@media screen and (min-width:600px)
+{
+  .mainSection .leftContent
+  {
+    margin-right: 40px;
+  }
+  .mainSection .rightContent
+  {
+    margin-left: 40px;
+  }
+}
+
+
+.handwriting
+{
+  font-family: 'Dancing Script', cursive;
+}

@@ -1,0 +1,110 @@
+<html lang="en" >
+<head>
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:url"              content="http://getwombat.com" />
+  <meta property="og:image"              content="http://getwombat.com/images/Wombat_HandPhone.png" />
+  <meta property="og:title"              content="EmCon: Empathy in Business" />
+  <meta property="og:description"        content="Hear from a line-up of industry leaders how you can use empathy to empower your business." />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <link href="MaterialIcons/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/emcon.css">
+
+  <title>EmCon: Empathy in Business</title>
+
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1782532585301303'); // Insert your pixel ID here.
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1782532585301303&ev=PageView&noscript=1"
+  /></noscript>
+</head>
+<body ng-app="wombatEmcon" ng-cloak 
+ng-init="initLandingPage()" 
+ng-controller="LandingPageCtrl as ctrl"
+class="wombatBody">
+<div id="preloader" layout="column" layout-align="center center" ng-show="!preloaderHidden">
+  <div class="wbt-head">
+    <div class="logo">
+      <img  src="images/WombatHead.png">
+    </div>
+  </div>
+</div>
+
+<div>
+  <md-content>
+    <div class="heading">
+      <div class="headingContainer" layout="column" layout-align="end space-between">
+        <h2 class="handwriting" hide-gt-xs>The first event of its kind in Jerusalem!</h2>
+        <div layout="row" layout-align="space-between end">
+          <img src="images/EmConSkyline.png">
+          <div layout="row" layout-align="center center" flex>
+            <h2 class="handwriting" hide show-gt-xs>The first event of its kind in Jerusalem!</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mainSection" layout="column" layout-align="center center">
+      <div class="mainContentContainer" layout="column" layout-gt-xs="row" layout-align="center center">
+        <div class="leftContent">
+          <h1>EmCon</h1>
+          <h2>Empathy in Business</h2>
+          <p>Hear from a lineup of industry leaders<br>
+          how you can use empathy to empower<br>
+          your business</p>
+        </div>
+        <div class="rightContent">
+          <h1 class="huge">SAVE<br>THE<br>DATE</h1>
+          <p>Thursday morning</p>
+          <h2 class="dateText">June 22, 2017</h2>
+        </div>
+      </div>
+    </div>
+  </md-content>
+</div>
+
+<!-- Angular Material requires Angular.js Libraries -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-resource.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-sanitize.min.js"></script>
+
+
+<script src="packages/angular-inview/angular-inview.js"></script>
+
+<!-- Angular Material Library -->
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+
+<script type="text/javascript" src="js/emcon.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71431554-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
