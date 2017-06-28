@@ -1,0 +1,108 @@
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:url"              content="http://getwombat.com" />
+  <meta property="og:image"              content="http://getwombat.com/images/WavingWombat2.png" />
+  <meta property="og:title"              content="Wombat Goodbye (for now)" />
+  <meta property="og:description"        content="Goodbye from Team Wombat, but stay tuned for what's coming next." />
+
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <style type="text/css">
+    body,
+    input
+    {
+      font-family: 'Open Sans', sans-serif;
+    }
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+    body,
+    md-content
+    {
+      background-color: white;
+    }
+
+
+    .bodyContainer
+    {
+      margin-top: 40px;
+      max-width: 80%;
+      width: 400px;
+
+      text-align: center;
+    }
+
+    .signature
+    {
+      font-weight: bold;
+    }
+
+    a{
+      color: #00acc1;
+    }
+    a:hover
+    {
+      color: #80deea;
+    }
+
+  </style>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1782532585301303'); // Insert your pixel ID here.
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1782532585301303&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- DO NOT MODIFY -->
+  <!-- End Facebook Pixel Code -->
+
+</head>
+<body ng-app="wombatGoodBye">
+  <md-content layout="column">
+    <div flex layout="column" layout-align="center center">
+      <div class="bodyContainer" layout="column" layout-align="center center">
+        <h1>It's time to say goodbye.</h1>
+        <p>We have really enjoyed the Wombat journey, but it's time to change things up and do something different. We're keeping our awesome team together, but we've decided to work on something new.</p>
+        <p>If you're interested in following our story as we pivot into something new, follow <a href="https://medium.com/@adi.zelnik.nouriel/the-pivot-diaries-ch-1-100-miles-an-hour-into-a-brick-wall-2187671f8a7d">The Pivot Diaries</a>.</p>
+        <p>Thanks for joining us on the startup rollercoaster, and feel free to be in touch!</p>
+        <img src="images/WavingWombat2.png">
+        <p class="signature">Team Wombat<br><a href="mailto:adi@getwombat.com">Adi</a>, <a href="mailto:liron@getwombat.com">Liron</a>, and <a href="mailto:ahuva@getwombat.com">Ahuva</a></p>
+      </div>
+    </div>
+  </md-content>
+
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-resource.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+  <script type="text/javascript">
+    var wombatGoodBye = angular.module('wombatGoodBye', ['ngResource', 'ngMaterial']);
+  </script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-71431554-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</body>
